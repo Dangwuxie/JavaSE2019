@@ -1,3 +1,4 @@
+import java.util.Scanner;
 interface Computer{
     void funRealComputer();
 }
@@ -37,7 +38,9 @@ public class Test6{
     //客户端（主方法）
     public static void main(String[] args){
         Client cli = new Client();
-        String computerName = "mac";
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("请输入你需要的电脑");
+        String computerName = scanner.nextLine();
         Computer computer = ComputerFactory.getInstance(computerName);
         cli.buyComputer(computer);
         
