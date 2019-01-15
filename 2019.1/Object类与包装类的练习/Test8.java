@@ -15,6 +15,8 @@ public class Test8{
         fun("Hello");
     }
     public static void fun(Object obj){
+        System.out.println(obj);
         System.out.println(obj.toString());
+
     }
 }
