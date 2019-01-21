@@ -47,14 +47,75 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test4.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Test4.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Day21/Test/Test4.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+            <state relative-caret-position="289">
+              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
               <folding>
                 <element signature="e#60#61#0" expanded="true" />
                 <element signature="e#96#97#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test5.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Day21/Test/Test5.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="258">
+              <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+              <folding>
+                <element signature="e#107#108#0" expanded="true" />
+                <element signature="e#134#135#0" expanded="true" />
+                <element signature="e#174#175#0" expanded="true" />
+                <element signature="e#206#207#0" expanded="true" />
+                <element signature="e#233#234#0" expanded="true" />
+                <element signature="e#259#260#0" expanded="true" />
+                <element signature="e#294#295#0" expanded="true" />
+                <element signature="e#324#325#0" expanded="true" />
+                <element signature="e#409#410#0" expanded="true" />
+                <element signature="e#439#440#0" expanded="true" />
+                <element signature="e#485#486#0" expanded="true" />
+                <element signature="e#523#524#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test6.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Day21/Test/Test6.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="26" column="27" lean-forward="true" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+              <folding>
+                <element signature="e#88#89#0" expanded="true" />
+                <element signature="e#115#116#0" expanded="true" />
+                <element signature="e#155#156#0" expanded="true" />
+                <element signature="e#187#188#0" expanded="true" />
+                <element signature="e#275#276#0" expanded="true" />
+                <element signature="e#303#304#0" expanded="true" />
+                <element signature="e#345#346#0" expanded="true" />
+                <element signature="e#379#380#0" expanded="true" />
+                <element signature="e#452#453#0" expanded="true" />
+                <element signature="e#480#481#0" expanded="true" />
+                <element signature="e#522#523#0" expanded="true" />
+                <element signature="e#556#557#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test7.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Day21/Test/Test7.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+              <folding>
+                <element signature="e#53#54#0" expanded="true" />
+                <element signature="e#89#90#0" expanded="true" />
+                <element signature="e#127#128#0" expanded="true" />
+                <element signature="e#163#164#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -77,6 +138,9 @@
         <option value="$PROJECT_DIR$/src/Day21/Test/Test2.java" />
         <option value="$PROJECT_DIR$/src/Day21/Test/Test3.java" />
         <option value="$PROJECT_DIR$/src/Day21/Test/Test4.java" />
+        <option value="$PROJECT_DIR$/src/Day21/Test/Test5.java" />
+        <option value="$PROJECT_DIR$/src/Day21/Test/Test6.java" />
+        <option value="$PROJECT_DIR$/src/Day21/Test/Test7.java" />
       </list>
     </option>
   </component>
@@ -89,7 +153,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="351" />
     <option name="y" value="87" />
     <option name="width" value="1164" />
@@ -150,24 +214,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Test4">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="Day21.Test.Test1" />
-      <module name="Day21. 类与对象(下)复习" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-    </configuration>
-    <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day21.Test.Test2" />
-      <module name="Day21. 类与对象(下)复习" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Day21.Test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
+  <component name="RunManager" selected="Application.Test7">
     <configuration name="Test3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Day21.Test.Test3" />
       <module name="Day21. 类与对象(下)复习" />
@@ -188,18 +235,50 @@
         </pattern>
       </extension>
     </configuration>
+    <configuration name="Test5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day21.Test.Test5" />
+      <module name="Day21. 类与对象(下)复习" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Day21.Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Test6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day21.Test.Test6" />
+      <module name="Day21. 类与对象(下)复习" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Day21.Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Test7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day21.Test.Test7" />
+      <module name="Day21. 类与对象(下)复习" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Day21.Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <list>
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Application.Test2" />
       <item itemvalue="Application.Test3" />
       <item itemvalue="Application.Test4" />
+      <item itemvalue="Application.Test5" />
+      <item itemvalue="Application.Test6" />
+      <item itemvalue="Application.Test7" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test7" />
+        <item itemvalue="Application.Test6" />
+        <item itemvalue="Application.Test5" />
         <item itemvalue="Application.Test4" />
         <item itemvalue="Application.Test3" />
-        <item itemvalue="Application.Test2" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -213,20 +292,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1548045001507</updated>
-      <workItem from="1548045005348" duration="3413000" />
+      <workItem from="1548045005348" duration="7582000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3413000" />
+    <option name="totallyTimeSpent" value="7582000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.32961783" />
       <window_info anchor="right" id="Palette&#9;" />
       <window_info id="Image Layers" />
       <window_info anchor="right" id="Capture Analysis" />
@@ -234,7 +312,7 @@
       <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3964968" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.42515925" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
@@ -293,11 +371,66 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Day21/Test/Test4.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        <state relative-caret-position="289">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
           <folding>
             <element signature="e#60#61#0" expanded="true" />
             <element signature="e#96#97#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Day21/Test/Test5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+          <folding>
+            <element signature="e#107#108#0" expanded="true" />
+            <element signature="e#134#135#0" expanded="true" />
+            <element signature="e#174#175#0" expanded="true" />
+            <element signature="e#206#207#0" expanded="true" />
+            <element signature="e#233#234#0" expanded="true" />
+            <element signature="e#259#260#0" expanded="true" />
+            <element signature="e#294#295#0" expanded="true" />
+            <element signature="e#324#325#0" expanded="true" />
+            <element signature="e#409#410#0" expanded="true" />
+            <element signature="e#439#440#0" expanded="true" />
+            <element signature="e#485#486#0" expanded="true" />
+            <element signature="e#523#524#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Day21/Test/Test6.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="26" column="27" lean-forward="true" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+          <folding>
+            <element signature="e#88#89#0" expanded="true" />
+            <element signature="e#115#116#0" expanded="true" />
+            <element signature="e#155#156#0" expanded="true" />
+            <element signature="e#187#188#0" expanded="true" />
+            <element signature="e#275#276#0" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
+            <element signature="e#345#346#0" expanded="true" />
+            <element signature="e#379#380#0" expanded="true" />
+            <element signature="e#452#453#0" expanded="true" />
+            <element signature="e#480#481#0" expanded="true" />
+            <element signature="e#522#523#0" expanded="true" />
+            <element signature="e#556#557#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Day21/Test/Test7.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+          <folding>
+            <element signature="e#53#54#0" expanded="true" />
+            <element signature="e#89#90#0" expanded="true" />
+            <element signature="e#127#128#0" expanded="true" />
+            <element signature="e#163#164#0" expanded="true" />
           </folding>
         </state>
       </provider>
