@@ -16,7 +16,6 @@ public class Test1 {
         MyThread myThread2 = new MyThread("B");
         MyThread myThread3 = new MyThread("C");
         myThread1.start();
-        myThread1.start();
         myThread2.start();
         myThread3.start();
     }
