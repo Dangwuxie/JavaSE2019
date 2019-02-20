@@ -22,7 +22,6 @@ public class Test1 {
         Thread thread1 = new Thread(new Abb(),"子线程A");
         thread1.setDaemon(true);
         thread1.start();
-
         Thread thread2 = new Thread(new Abb(),"子线程B");
         thread2.start();
         Thread.sleep(3000);
