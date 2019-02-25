@@ -6,7 +6,7 @@ class Person7{
     }
 }
 class Student7 extends Person7{
-    void fun(){
+    public void fun(){
         System.out.println("Student类覆写的方法");
     }
 }
