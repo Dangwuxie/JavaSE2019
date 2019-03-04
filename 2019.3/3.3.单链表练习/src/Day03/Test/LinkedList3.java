@@ -53,6 +53,7 @@ public class LinkedList3 {
         prev.next = newNode;
         //prev.next = new Node(data,prev.next);
         size++;
+
     }
     public static void main(String[] args) {
 
