@@ -1,4 +1,5 @@
 package Day03.Test;
+
 //火车类
 public class LinkedList3 {
     //火车头节点；
@@ -34,7 +35,7 @@ public class LinkedList3 {
     }
     //在链表某处随机插入新的节点
     public void add(int index,Object data){
-        //比如所add(2,3),就是指在插入第二个节点；
+        //比如所add(2,3),就是指在插入第san个节点；
         //就是在第一个节点的后面；
         if (index < 0 || index > size){
             throw new IndexOutOfBoundsException("数组越界异常");
@@ -48,6 +49,7 @@ public class LinkedList3 {
         for (int i = 0;i < index-1;i++){
             prev = prev.next;
         }
+        System.out.println("前驱节点"+prev.data);
         Node newNode = new Node(data);
         newNode.next = prev.next;
         prev.next = newNode;
@@ -55,7 +57,20 @@ public class LinkedList3 {
         size++;
 
     }
-    public static void main(String[] args) {
-
+    public Object[] toArray() {
+        //遍历节点将数据存放到对象数组中
+        Object[] dabs = new Object[size];
+        int i = 0;
+        for (Node temp = head; temp != null; temp = temp.next){
+            dabs[i++] = temp.data;
+        }
+        return dabs;
+    }
+    public void add999(int index){
+        Node prev = head;
+        for (int i = 0;i < index-1;i++){
+            prev = prev.next;
+        }
+        System.out.println(prev.data);
     }
 }
