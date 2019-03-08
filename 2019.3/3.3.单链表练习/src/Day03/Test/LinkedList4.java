@@ -21,6 +21,7 @@ public class LinkedList4 {
             this.data = data;
         }
     }
+
     public void add4(Object data){
         //创建新节点存放数据；
         Node newnode4 = new Node(data);
@@ -65,6 +66,25 @@ public class LinkedList4 {
                 return true;
         }
         return false;
+    }
+    public void reverseBetween(int m,int n) {
+        Node m2 = head;
+        Node n2 = head;
+        for(int i = 0;i < m-1;i++){
+            m2 = m2.next;
+        }
+        for(int i = 0;i < n-1;i++){
+            n2 = n2.next;
+        }
+        Node prev666 = new Node(-1);
+        prev666 = m2;
+        Node m3 = m2.next;
+        while(m3 != n2.next){
+            m2.next = m3.next;
+            m3.next = prev666.next;
+            prev666.next = m3;
+            m3 = m2.next;
+        }
     }
     public void removeElements(int index){
         if (index < 0 || index >=size){
