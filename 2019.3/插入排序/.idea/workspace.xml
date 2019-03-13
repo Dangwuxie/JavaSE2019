@@ -15,8 +15,8 @@
       <file leaf-file-name="Test1.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Day08/Test/Test1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+            <state relative-caret-position="197">
+              <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -24,18 +24,18 @@
       <file leaf-file-name="Insert.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Day08/Test/Insert.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="188" column="18" selection-start-line="188" selection-start-column="18" selection-end-line="188" selection-end-column="18" />
+            <state relative-caret-position="54">
+              <caret line="234" column="56" selection-start-line="234" selection-start-column="56" selection-end-line="234" selection-end-column="56" />
               <folding>
                 <element signature="method#bubbleSort#0;class#Insert#0" />
                 <element signature="method#insertSort#0;class#Insert#0" />
-                <element signature="method#binInsertSort#0;class#Insert#0" />
+                <element signature="method#binaryInsertSort#0;class#Insert#0" />
                 <element signature="method#shellSort#0;class#Insert#0" />
                 <element signature="method#print#0;class#Insert#0" />
                 <element signature="method#selectionSort#0;class#Insert#0" />
                 <element signature="method#generateArray#0;class#Insert#0" />
                 <element signature="method#generateNearlySortArray#0;class#Insert#0" />
-                <marker date="1552318193427" expanded="true" signature="5450:5680" ph="{...}" />
+                <element signature="method#swap#0;class#Insert#0" />
               </folding>
             </state>
           </provider>
@@ -44,7 +44,7 @@
       <file leaf-file-name="排序笔记.java" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Documents/Tencent Files/974079012/FileRecv/排序笔记.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
+            <state relative-caret-position="1547">
               <caret line="106" column="8" selection-start-line="106" selection-start-column="8" selection-end-line="106" selection-end-column="8" />
             </state>
           </provider>
@@ -88,9 +88,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -120,6 +119,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -170,11 +170,13 @@
       <workItem from="1552183074671" duration="4544000" />
       <workItem from="1552189584498" duration="3620000" />
       <workItem from="1552204814168" duration="15762000" />
+      <workItem from="1552360312454" duration="2339000" />
+      <workItem from="1552475322947" duration="6743000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29951000" />
+    <option name="totallyTimeSpent" value="39033000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
@@ -224,6 +226,70 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Day08/Test/Test1.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Day08/Test/Insert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1938">
+          <caret line="230" lean-forward="true" selection-start-line="230" selection-end-line="230" />
+          <folding>
+            <element signature="method#bubbleSort#0;class#Insert#0" />
+            <element signature="method#insertSort#0;class#Insert#0" />
+            <element signature="method#binaryInsertSort#0;class#Insert#0" />
+            <element signature="method#shellSort#0;class#Insert#0" />
+            <element signature="method#print#0;class#Insert#0" />
+            <element signature="method#selectionSort#0;class#Insert#0" />
+            <element signature="method#generateArray#0;class#Insert#0" />
+            <element signature="method#generateNearlySortArray#0;class#Insert#0" />
+            <element signature="method#swap#0;class#Insert#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/Tencent Files/974079012/FileRecv/排序笔记.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1802">
+          <caret line="106" column="8" selection-start-line="106" selection-start-column="8" selection-end-line="106" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Day08/Test/Test1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/Tencent Files/974079012/FileRecv/排序笔记.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1802">
+          <caret line="106" column="8" selection-start-line="106" selection-start-column="8" selection-end-line="106" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Day08/Test/Insert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3196">
+          <caret line="188" column="7" lean-forward="true" selection-start-line="188" selection-start-column="7" selection-end-line="188" selection-end-column="7" />
+          <folding>
+            <element signature="method#bubbleSort#0;class#Insert#0" />
+            <element signature="method#insertSort#0;class#Insert#0" />
+            <element signature="method#binaryInsertSort#0;class#Insert#0" />
+            <element signature="method#shellSort#0;class#Insert#0" />
+            <element signature="method#print#0;class#Insert#0" />
+            <element signature="method#selectionSort#0;class#Insert#0" />
+            <element signature="method#generateArray#0;class#Insert#0" />
+            <element signature="method#generateNearlySortArray#0;class#Insert#0" />
+            <element signature="method#swap#0;class#Insert#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Day08/Test/Test1.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
@@ -243,13 +309,13 @@
           <folding>
             <element signature="method#bubbleSort#0;class#Insert#0" />
             <element signature="method#insertSort#0;class#Insert#0" />
-            <element signature="method#binInsertSort#0;class#Insert#0" />
+            <element signature="method#binaryInsertSort#0;class#Insert#0" />
             <element signature="method#shellSort#0;class#Insert#0" />
             <element signature="method#print#0;class#Insert#0" />
             <element signature="method#selectionSort#0;class#Insert#0" />
             <element signature="method#generateArray#0;class#Insert#0" />
             <element signature="method#generateNearlySortArray#0;class#Insert#0" />
-            <marker date="1552318193427" expanded="true" signature="5450:5680" ph="{...}" />
+            <element signature="method#swap#0;class#Insert#0" />
           </folding>
         </state>
       </provider>
@@ -275,13 +341,13 @@
           <folding>
             <element signature="method#bubbleSort#0;class#Insert#0" />
             <element signature="method#insertSort#0;class#Insert#0" />
-            <element signature="method#binInsertSort#0;class#Insert#0" />
+            <element signature="method#binaryInsertSort#0;class#Insert#0" />
             <element signature="method#shellSort#0;class#Insert#0" />
             <element signature="method#print#0;class#Insert#0" />
             <element signature="method#selectionSort#0;class#Insert#0" />
             <element signature="method#generateArray#0;class#Insert#0" />
             <element signature="method#generateNearlySortArray#0;class#Insert#0" />
-            <marker date="1552318193427" expanded="true" signature="5450:5680" ph="{...}" />
+            <element signature="method#swap#0;class#Insert#0" />
           </folding>
         </state>
       </provider>
@@ -307,13 +373,13 @@
           <folding>
             <element signature="method#bubbleSort#0;class#Insert#0" />
             <element signature="method#insertSort#0;class#Insert#0" />
-            <element signature="method#binInsertSort#0;class#Insert#0" />
+            <element signature="method#binaryInsertSort#0;class#Insert#0" />
             <element signature="method#shellSort#0;class#Insert#0" />
             <element signature="method#print#0;class#Insert#0" />
             <element signature="method#selectionSort#0;class#Insert#0" />
             <element signature="method#generateArray#0;class#Insert#0" />
             <element signature="method#generateNearlySortArray#0;class#Insert#0" />
-            <marker date="1552318193427" expanded="true" signature="5450:5680" ph="{...}" />
+            <element signature="method#swap#0;class#Insert#0" />
           </folding>
         </state>
       </provider>
@@ -341,32 +407,32 @@
     </entry>
     <entry file="file://$USER_HOME$/Documents/Tencent Files/974079012/FileRecv/排序笔记.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
+        <state relative-caret-position="1547">
           <caret line="106" column="8" selection-start-line="106" selection-start-column="8" selection-end-line="106" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Day08/Test/Test1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        <state relative-caret-position="197">
+          <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Day08/Test/Insert.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="188" column="18" selection-start-line="188" selection-start-column="18" selection-end-line="188" selection-end-column="18" />
+        <state relative-caret-position="54">
+          <caret line="234" column="56" selection-start-line="234" selection-start-column="56" selection-end-line="234" selection-end-column="56" />
           <folding>
             <element signature="method#bubbleSort#0;class#Insert#0" />
             <element signature="method#insertSort#0;class#Insert#0" />
-            <element signature="method#binInsertSort#0;class#Insert#0" />
+            <element signature="method#binaryInsertSort#0;class#Insert#0" />
             <element signature="method#shellSort#0;class#Insert#0" />
             <element signature="method#print#0;class#Insert#0" />
             <element signature="method#selectionSort#0;class#Insert#0" />
             <element signature="method#generateArray#0;class#Insert#0" />
             <element signature="method#generateNearlySortArray#0;class#Insert#0" />
-            <marker date="1552318193427" expanded="true" signature="5450:5680" ph="{...}" />
+            <element signature="method#swap#0;class#Insert#0" />
           </folding>
         </state>
       </provider>
