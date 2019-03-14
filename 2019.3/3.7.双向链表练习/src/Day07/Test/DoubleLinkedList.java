@@ -123,7 +123,6 @@ public class DoubleLinkedList implements Sequence {
         }
         return false;
     }
-
     @Override
     public Object set(int index, Object newData) {
         rangeCheck(index);

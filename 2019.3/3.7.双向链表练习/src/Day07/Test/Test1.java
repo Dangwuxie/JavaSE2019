@@ -20,7 +20,7 @@ public class Test1 {
             System.out.print(o+"  ");
         }
         //doubleLinkedList.clear();
-        System.out.println();
-        System.out.println(doubleLinkedList.size());
+        /*System.out.println();
+        System.out.println(doubleLinkedList.size());*/
     }
 }

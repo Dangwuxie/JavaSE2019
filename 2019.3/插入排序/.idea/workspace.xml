@@ -15,7 +15,7 @@
       <file leaf-file-name="Test1.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Day08/Test/Test1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
+            <state relative-caret-position="374">
               <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
             </state>
           </provider>
@@ -24,7 +24,7 @@
       <file leaf-file-name="Insert.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Day08/Test/Insert.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
+            <state relative-caret-position="17">
               <caret line="234" column="56" selection-start-line="234" selection-start-column="56" selection-end-line="234" selection-end-column="56" />
               <folding>
                 <element signature="method#bubbleSort#0;class#Insert#0" />
@@ -44,7 +44,7 @@
       <file leaf-file-name="排序笔记.java" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Documents/Tencent Files/974079012/FileRecv/排序笔记.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1547">
+            <state relative-caret-position="1802">
               <caret line="106" column="8" selection-start-line="106" selection-start-column="8" selection-end-line="106" selection-end-column="8" />
             </state>
           </provider>
@@ -89,7 +89,7 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -119,7 +119,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -172,18 +172,20 @@
       <workItem from="1552204814168" duration="15762000" />
       <workItem from="1552360312454" duration="2339000" />
       <workItem from="1552475322947" duration="6743000" />
+      <workItem from="1552492352501" duration="599000" />
+      <workItem from="1552553938546" duration="52000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39033000" />
+    <option name="totallyTimeSpent" value="39684000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.329582" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -206,6 +208,7 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.26688102" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.329582" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -224,6 +227,70 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Day08/Test/Test1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/Tencent Files/974079012/FileRecv/排序笔记.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1802">
+          <caret line="106" column="8" selection-start-line="106" selection-start-column="8" selection-end-line="106" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Day08/Test/Insert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3978">
+          <caret line="234" column="56" selection-start-line="234" selection-start-column="56" selection-end-line="234" selection-end-column="56" />
+          <folding>
+            <element signature="method#bubbleSort#0;class#Insert#0" />
+            <element signature="method#insertSort#0;class#Insert#0" />
+            <element signature="method#binaryInsertSort#0;class#Insert#0" />
+            <element signature="method#shellSort#0;class#Insert#0" />
+            <element signature="method#print#0;class#Insert#0" />
+            <element signature="method#selectionSort#0;class#Insert#0" />
+            <element signature="method#generateArray#0;class#Insert#0" />
+            <element signature="method#generateNearlySortArray#0;class#Insert#0" />
+            <element signature="method#swap#0;class#Insert#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Day08/Test/Test1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/Tencent Files/974079012/FileRecv/排序笔记.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1802">
+          <caret line="106" column="8" selection-start-line="106" selection-start-column="8" selection-end-line="106" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Day08/Test/Insert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3978">
+          <caret line="234" column="56" selection-start-line="234" selection-start-column="56" selection-end-line="234" selection-end-column="56" />
+          <folding>
+            <element signature="method#bubbleSort#0;class#Insert#0" />
+            <element signature="method#insertSort#0;class#Insert#0" />
+            <element signature="method#binaryInsertSort#0;class#Insert#0" />
+            <element signature="method#shellSort#0;class#Insert#0" />
+            <element signature="method#print#0;class#Insert#0" />
+            <element signature="method#selectionSort#0;class#Insert#0" />
+            <element signature="method#generateArray#0;class#Insert#0" />
+            <element signature="method#generateNearlySortArray#0;class#Insert#0" />
+            <element signature="method#swap#0;class#Insert#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Day08/Test/Test1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -407,21 +474,21 @@
     </entry>
     <entry file="file://$USER_HOME$/Documents/Tencent Files/974079012/FileRecv/排序笔记.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1547">
+        <state relative-caret-position="1802">
           <caret line="106" column="8" selection-start-line="106" selection-start-column="8" selection-end-line="106" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Day08/Test/Test1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
+        <state relative-caret-position="374">
           <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Day08/Test/Insert.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
+        <state relative-caret-position="17">
           <caret line="234" column="56" selection-start-line="234" selection-start-column="56" selection-end-line="234" selection-end-column="56" />
           <folding>
             <element signature="method#bubbleSort#0;class#Insert#0" />
