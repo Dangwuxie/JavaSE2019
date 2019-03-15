@@ -6,21 +6,12 @@ public class Test1 {
 
     public static void main(String[] args) {
 	// write your code here
-        int[] data = new int[]{1,5,7,9,8,2,4,3};
-        Insert.quickSort(data);
-        //int[] data = Insert.generateNearlySortArray(10,2,10);
+        int [] data = new int[]{4,5,7,9,8,2,1,3};
+        //Insert.quickSort(data);
         //Insert.print(data);
-        //System.currentTimeMillis();
-        /*Random random = new Random();
-        int a = random.nextInt(10);
-        int b = random.nextInt(10);
-        System.out.println(a+"  "+b);*/
-        /*int[] data = Insert.generateArray(30000,0,1000000);
-        Insert.bubbleSort(data);
-        Insert.insertSort(data);
-        Insert.shellSort(data);
-        Insert.binaryInsertSort(data);
-        Insert.selectionSort(data);*/
+       Insert.quickSort2(data);
+
+
         Insert.print(data);
     }
 }

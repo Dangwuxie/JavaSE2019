@@ -193,7 +193,7 @@ public class Insert {
      * @param range 随机生成范围
      * @return
      */
-    public static int[] generateNearlySortArray(int n,int switchTimes,int range){
+    public static int[] generateNearlySortArray(int n,int switchTimes){
         int data[] = new int[n];
         for (int i = 0;i < n;i++){
             data[i] = i;
@@ -201,8 +201,8 @@ public class Insert {
         //然后就要交换元素
         for (int i = 0;i < switchTimes;i++){
             Random random = new Random();
-            int a = random.nextInt(range);
-            int b = random.nextInt(range);
+            int a = random.nextInt(n);
+            int b = random.nextInt(n);
             int temp = data[a];
             data[a] = data[b];
             data[b] = temp;
@@ -210,12 +210,29 @@ public class Insert {
         return data;
     }
 
+    /**
+     * 快速排序；
+     * @param array
+     */
     public static void quickSort(int[] array){
+        long start = System.currentTimeMillis();
         int n = array.length;
         if (n <= 1){
             return;
         }
         quickSortInternal(array,0,n-1);
+        long end = System.currentTimeMillis();
+        System.out.println("快速排序总耗时"+(end-start)+"毫秒");
+    }
+    public static void quickSort2(int[] array) {
+        long start = System.currentTimeMillis();
+        int n = array.length;
+        if (n <= 1) {
+            return;
+        }
+        quickSortInternal2(array, 0, n - 1);
+        long end = System.currentTimeMillis();
+        System.out.println("二路快速排序总耗时" + (end - start) + "毫秒");
     }
     private static void quickSortInternal(int[] array,int l,int r){
         if (l >= r){
@@ -226,6 +243,36 @@ public class Insert {
         quickSortInternal(array,q+1,r);
 
     }
+    private static void quickSortInternal2(int[] array,int l,int r){
+        if (l >= r){
+            return;
+        }
+        int pivot = partition2(array,l,r);
+        quickSortInternal2(array,l,pivot-1);
+        quickSortInternal2(array,pivot+1,r);
+    }
+    private static int partition2(int[] data,int left,int right){
+
+        int i = left+1;
+        int j = right;
+        int value = data[left];
+        while(i <= j){
+            while(data[i] < value){
+                i++;
+            }
+            while(data[j] > value){
+                j--;
+            }
+            if (i > j){
+                break;
+            }
+            swap(data,i,j);
+            i++;
+            j--;
+        }
+        swap(data,left,j);
+        return j;
+    }
     /**
      *  分区点
      * @param array
@@ -233,6 +280,10 @@ public class Insert {
      * @param y
      */
     private static int partition(int[] array,int l,int r){
+        //每次以第一个元素为分区点进行快排，对一个近乎有序并且特别大的数列进行快排会发生栈溢出
+        //因为栈内存不够用，递归不下去了；
+        int randomIndex = (int) ((Math.random()*(r-l+1))+l);
+        swap(array,l,randomIndex);
         int v = array[l];
         int j = l;
         int i = l + 1 ;
@@ -245,11 +296,19 @@ public class Insert {
         swap(array,l,j);
         return j;
     }
+
+    /**
+     * 交换元素
+     * @param array
+     * @param l
+     * @param r
+     */
     private static void swap(int[] array,int l,int r){
         int temp = array[l];
         array[l] = array[r];
         array[r] = temp;
     }
+
     /*public static void mergeSort(int[] array){
         int n = array.length;
         if (n <= 0){
