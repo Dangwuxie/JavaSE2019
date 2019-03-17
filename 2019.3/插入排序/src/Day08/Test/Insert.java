@@ -234,6 +234,16 @@ public class Insert {
         long end = System.currentTimeMillis();
         System.out.println("二路快速排序总耗时" + (end - start) + "毫秒");
     }
+    public static void quickSort3(int[] array){
+        long start = System.currentTimeMillis();
+        int n = array.length;
+        if (n <= 1) {
+            return;
+        }
+        quickSortInternal3(array, 0, n - 1);
+        long end = System.currentTimeMillis();
+        System.out.println("三路快速排序总耗时" + (end - start) + "毫秒");
+    }
     private static void quickSortInternal(int[] array,int l,int r){
         if (l >= r){
             return;
@@ -250,6 +260,46 @@ public class Insert {
         int pivot = partition2(array,l,r);
         quickSortInternal2(array,l,pivot-1);
         quickSortInternal2(array,pivot+1,r);
+    }
+    private static void quickSortInternal3(int[] array,int l,int r){
+        if (l >= r){
+            return;
+        }
+        int pivot = partition3(array,l,r);
+        quickSortInternal3(array,l,pivot-1);
+        quickSortInternal3(array,pivot+1,r);
+    }
+    private static int partition3(int[] array,int l,int r){
+        //三个指针，lt永远指向小于pivot区域的最后个元素
+        //gt永远指向大于pivot区域的的第一个元素
+        //i一直向后遍历元素；跟双路快排优点差别，双路快排是两个指针同时
+        //分别从前向后、从后向前遍历；三路快排是三个指针，两个固定指向，一个从前向后遍历；
+        int value = array[l];
+        int lt = l;//刚开始lt指向小于v区域的前一个位置；即初始位置；
+        int i = l+1;
+        int gt = r+1;//同样gt后向前遍历，初始指向大于v区域的前一个位置；
+        //下面开始遍历,从i+1处开始遍历
+        while (i < gt){
+            if (array[i] < value){
+                swap(array,i,lt+1);
+                lt++;
+                i++;
+            }else if(array[i] > value){
+                swap(array,i,gt-1);
+                gt--;
+                //此处不能i++；因为当前i的元素是换回来的gt-1位置的元素
+                //必须再次比较
+                //前一个if入口的i++是因为当前i所指的元素就是换过来的小于
+                //v的值，所以直接遍历下一个元素就行；
+               // i++;
+            }else{
+                i++;
+            }
+        }
+        //注意：这里的循环完成后，一定是gt指向小于v的最后一个区域；
+        //所以这里可以直接交换l和gt的元素，然后返回gt 这个下标；
+        swap(array,l,lt);
+        return lt;
     }
     private static int partition2(int[] data,int left,int right){
 
@@ -280,7 +330,8 @@ public class Insert {
      * @param y
      */
     private static int partition(int[] array,int l,int r){
-        //每次以第一个元素为分区点进行快排，对一个近乎有序并且特别大的数列进行快排会发生栈溢出
+        //每次以第一个元素为分区点进行快排，
+        //对一个近乎有序并且特别大的数列进行快排会发生栈溢出
         //因为栈内存不够用，递归不下去了；
         int randomIndex = (int) ((Math.random()*(r-l+1))+l);
         swap(array,l,randomIndex);
@@ -309,26 +360,60 @@ public class Insert {
         array[r] = temp;
     }
 
-    /*public static void mergeSort(int[] array){
+    public static void mergeSort(int[] array){
+        long start = System.currentTimeMillis();
         int n = array.length;
-        if (n <= 0){
-            return;;
+        if (n <= 1){
+            return;
         }
-        int mid = n / 2;
         mergeInternal(array,0,n-1);
+        long end = System.currentTimeMillis();
+        System.out.println("归并排序耗时："+(end-start)+"毫秒");
     }
-    /*private static void mergeInternal(int[] array;int low,int high){
-        int mid = (low+(high-low)) / 2;
+    private static void mergeInternal(int[] array,int low,int high){
+        if (low >= high){
+            return;
+        }
+        int mid = (low + high) / 2;
         //左边小数组
-        mergeInternal(array,low,mid-1);
+        mergeInternal(array,low,mid);
         //右边小数组
         mergeInternal(array,mid+1,high);
-        //合并
+        //合并两个小数组
         merge(array,low,mid,high);
     }
-    /*private static void merge(int[] array,int p,int q,int r){
-
-    }*/
+    private static void merge(int[] array,int p,int q,int r){
+        //把两个有序的数组合成大的有序数组，需要借助临时空间来解决
+        //临时空间的大小等于两个小数组的长度之和；
+        int i = p;
+        int j = q + 1;
+        int[] temp = new int[r-p+1];
+        int k = 0;
+        //此时两个数组中均有元素
+        while (i <= q && j <= r){
+            if (array[i] <= array[j]){
+                //此处加上等于号是为了保证稳定性；
+                temp[k++] = array[i++];
+            }else{
+                temp[k++] = array[j++];
+            }
+        }
+        //判断当前还有哪个数组元素没有走完；
+        int start = i;
+        int end = q;
+        if (j <= r){
+            start = j;
+            end = r;
+        }
+        //把剩余元素直接放在temp数组后即可
+        while (start <= end){
+            temp[k++] = array[start++];
+        }
+        //然后将临时空间中已经合并好的元素拷贝回原数组；
+        for (i = 0;i < r-p+1;i++){
+            array[p+i] = temp[i];
+        }
+    }
 
 }
 

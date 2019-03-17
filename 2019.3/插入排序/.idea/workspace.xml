@@ -15,8 +15,8 @@
       <file leaf-file-name="Test1.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Day08/Test/Test1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+            <state relative-caret-position="79">
+              <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -24,8 +24,8 @@
       <file leaf-file-name="Insert.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Day08/Test/Insert.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="234" column="30" selection-start-line="234" selection-start-column="30" selection-end-line="234" selection-end-column="30" />
+            <state relative-caret-position="85">
+              <caret line="275" column="50" selection-start-line="275" selection-start-column="50" selection-end-line="275" selection-end-column="50" />
               <folding>
                 <element signature="method#bubbleSort#0;class#Insert#0" />
                 <element signature="method#insertSort#0;class#Insert#0" />
@@ -35,8 +35,17 @@
                 <element signature="method#selectionSort#0;class#Insert#0" />
                 <element signature="method#generateArray#0;class#Insert#0" />
                 <element signature="method#generateNearlySortArray#0;class#Insert#0" />
-                <element signature="method#quickSort#0;class#Insert#0" />
+                <element signature="method#quickSort2#0;class#Insert#0" />
+                <element signature="method#quickSort3#0;class#Insert#0" />
+                <element signature="method#quickSortInternal#0;class#Insert#0" />
+                <element signature="method#quickSortInternal2#0;class#Insert#0" />
+                <element signature="method#quickSortInternal3#0;class#Insert#0" />
+                <element signature="method#partition2#0;class#Insert#0" />
                 <element signature="method#partition#0;class#Insert#0" />
+                <element signature="method#swap#0;class#Insert#0" />
+                <element signature="method#mergeSort#0;class#Insert#0" />
+                <element signature="method#mergeInternal#0;class#Insert#0" />
+                <element signature="method#merge#0;class#Insert#0" />
               </folding>
             </state>
           </provider>
@@ -78,7 +87,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="351" />
     <option name="y" value="87" />
     <option name="width" value="1164" />
@@ -89,7 +98,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -121,6 +129,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -129,6 +138,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -178,14 +188,19 @@
       <workItem from="1552574164965" duration="1903000" />
       <workItem from="1552642850034" duration="1019000" />
       <workItem from="1552657958086" duration="9876000" />
+      <workItem from="1552736884555" duration="7573000" />
+      <workItem from="1552747554524" duration="41000" />
+      <workItem from="1552748183408" duration="4843000" />
+      <workItem from="1552824322955" duration="6025000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52482000" />
+    <option name="totallyTimeSpent" value="70964000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="735" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -197,11 +212,11 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.34405145" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.12861736" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1615925" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16081187" />
       <window_info anchor="bottom" id="Profiler" order="7" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -209,7 +224,7 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39389068" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.46623793" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -226,10 +241,178 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="15" />
+      <option name="time" value="17" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Day08/Test/Test1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="53" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Day08/Test/Insert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1258">
+          <caret line="271" column="58" selection-start-line="271" selection-start-column="58" selection-end-line="271" selection-end-column="58" />
+          <folding>
+            <element signature="method#bubbleSort#0;class#Insert#0" />
+            <element signature="method#insertSort#0;class#Insert#0" />
+            <element signature="method#binaryInsertSort#0;class#Insert#0" />
+            <element signature="method#shellSort#0;class#Insert#0" />
+            <element signature="method#print#0;class#Insert#0" />
+            <element signature="method#selectionSort#0;class#Insert#0" />
+            <element signature="method#generateArray#0;class#Insert#0" />
+            <element signature="method#generateNearlySortArray#0;class#Insert#0" />
+            <element signature="method#quickSort2#0;class#Insert#0" />
+            <element signature="method#quickSort3#0;class#Insert#0" />
+            <element signature="method#quickSortInternal#0;class#Insert#0" />
+            <element signature="method#quickSortInternal2#0;class#Insert#0" />
+            <element signature="method#quickSortInternal3#0;class#Insert#0" />
+            <element signature="method#partition2#0;class#Insert#0" />
+            <element signature="method#partition#0;class#Insert#0" />
+            <element signature="method#swap#0;class#Insert#0" />
+            <element signature="method#mergeSort#0;class#Insert#0" />
+            <element signature="method#mergeInternal#0;class#Insert#0" />
+            <element signature="method#merge#0;class#Insert#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/Tencent Files/974079012/FileRecv/排序笔记.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1802">
+          <caret line="106" column="8" selection-start-line="106" selection-start-column="8" selection-end-line="106" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Day08/Test/Test1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/Tencent Files/974079012/FileRecv/排序笔记.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1802">
+          <caret line="106" column="8" selection-start-line="106" selection-start-column="8" selection-end-line="106" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Day08/Test/Insert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="236" column="46" selection-start-line="236" selection-start-column="46" selection-end-line="236" selection-end-column="46" />
+          <folding>
+            <element signature="method#bubbleSort#0;class#Insert#0" />
+            <element signature="method#insertSort#0;class#Insert#0" />
+            <element signature="method#binaryInsertSort#0;class#Insert#0" />
+            <element signature="method#shellSort#0;class#Insert#0" />
+            <element signature="method#print#0;class#Insert#0" />
+            <element signature="method#selectionSort#0;class#Insert#0" />
+            <element signature="method#generateArray#0;class#Insert#0" />
+            <element signature="method#generateNearlySortArray#0;class#Insert#0" />
+            <element signature="method#quickSort2#0;class#Insert#0" />
+            <element signature="method#quickSort3#0;class#Insert#0" />
+            <element signature="method#quickSortInternal#0;class#Insert#0" />
+            <element signature="method#quickSortInternal2#0;class#Insert#0" />
+            <element signature="method#quickSortInternal3#0;class#Insert#0" />
+            <element signature="method#partition2#0;class#Insert#0" />
+            <element signature="method#partition#0;class#Insert#0" />
+            <element signature="method#swap#0;class#Insert#0" />
+            <element signature="method#mergeSort#0;class#Insert#0" />
+            <element signature="method#mergeInternal#0;class#Insert#0" />
+            <element signature="method#merge#0;class#Insert#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Day08/Test/Test1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/Tencent Files/974079012/FileRecv/排序笔记.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1802">
+          <caret line="106" column="8" selection-start-line="106" selection-start-column="8" selection-end-line="106" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Day08/Test/Insert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="236" column="46" selection-start-line="236" selection-start-column="46" selection-end-line="236" selection-end-column="46" />
+          <folding>
+            <element signature="method#bubbleSort#0;class#Insert#0" />
+            <element signature="method#insertSort#0;class#Insert#0" />
+            <element signature="method#binaryInsertSort#0;class#Insert#0" />
+            <element signature="method#shellSort#0;class#Insert#0" />
+            <element signature="method#print#0;class#Insert#0" />
+            <element signature="method#selectionSort#0;class#Insert#0" />
+            <element signature="method#generateArray#0;class#Insert#0" />
+            <element signature="method#generateNearlySortArray#0;class#Insert#0" />
+            <element signature="method#quickSort2#0;class#Insert#0" />
+            <element signature="method#quickSort3#0;class#Insert#0" />
+            <element signature="method#quickSortInternal#0;class#Insert#0" />
+            <element signature="method#quickSortInternal2#0;class#Insert#0" />
+            <element signature="method#quickSortInternal3#0;class#Insert#0" />
+            <element signature="method#partition2#0;class#Insert#0" />
+            <element signature="method#partition#0;class#Insert#0" />
+            <element signature="method#swap#0;class#Insert#0" />
+            <element signature="method#mergeSort#0;class#Insert#0" />
+            <element signature="method#mergeInternal#0;class#Insert#0" />
+            <element signature="method#merge#0;class#Insert#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Day08/Test/Test1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/Tencent Files/974079012/FileRecv/排序笔记.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1802">
+          <caret line="106" column="8" selection-start-line="106" selection-start-column="8" selection-end-line="106" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Day08/Test/Insert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3978">
+          <caret line="234" column="30" selection-start-line="234" selection-start-column="30" selection-end-line="234" selection-end-column="30" />
+          <folding>
+            <element signature="method#bubbleSort#0;class#Insert#0" />
+            <element signature="method#insertSort#0;class#Insert#0" />
+            <element signature="method#binaryInsertSort#0;class#Insert#0" />
+            <element signature="method#shellSort#0;class#Insert#0" />
+            <element signature="method#print#0;class#Insert#0" />
+            <element signature="method#selectionSort#0;class#Insert#0" />
+            <element signature="method#generateArray#0;class#Insert#0" />
+            <element signature="method#generateNearlySortArray#0;class#Insert#0" />
+            <element signature="method#quickSort2#0;class#Insert#0" />
+            <element signature="method#quickSort3#0;class#Insert#0" />
+            <element signature="method#quickSortInternal#0;class#Insert#0" />
+            <element signature="method#quickSortInternal2#0;class#Insert#0" />
+            <element signature="method#quickSortInternal3#0;class#Insert#0" />
+            <element signature="method#partition2#0;class#Insert#0" />
+            <element signature="method#partition#0;class#Insert#0" />
+            <element signature="method#swap#0;class#Insert#0" />
+            <element signature="method#mergeSort#0;class#Insert#0" />
+            <element signature="method#mergeInternal#0;class#Insert#0" />
+            <element signature="method#merge#0;class#Insert#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Day08/Test/Test1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -257,8 +440,17 @@
             <element signature="method#selectionSort#0;class#Insert#0" />
             <element signature="method#generateArray#0;class#Insert#0" />
             <element signature="method#generateNearlySortArray#0;class#Insert#0" />
-            <element signature="method#quickSort#0;class#Insert#0" />
+            <element signature="method#quickSort2#0;class#Insert#0" />
+            <element signature="method#quickSort3#0;class#Insert#0" />
+            <element signature="method#quickSortInternal#0;class#Insert#0" />
+            <element signature="method#quickSortInternal2#0;class#Insert#0" />
+            <element signature="method#quickSortInternal3#0;class#Insert#0" />
+            <element signature="method#partition2#0;class#Insert#0" />
             <element signature="method#partition#0;class#Insert#0" />
+            <element signature="method#swap#0;class#Insert#0" />
+            <element signature="method#mergeSort#0;class#Insert#0" />
+            <element signature="method#mergeInternal#0;class#Insert#0" />
+            <element signature="method#merge#0;class#Insert#0" />
           </folding>
         </state>
       </provider>
@@ -283,8 +475,17 @@
             <element signature="method#selectionSort#0;class#Insert#0" />
             <element signature="method#generateArray#0;class#Insert#0" />
             <element signature="method#generateNearlySortArray#0;class#Insert#0" />
-            <element signature="method#quickSort#0;class#Insert#0" />
+            <element signature="method#quickSort2#0;class#Insert#0" />
+            <element signature="method#quickSort3#0;class#Insert#0" />
+            <element signature="method#quickSortInternal#0;class#Insert#0" />
+            <element signature="method#quickSortInternal2#0;class#Insert#0" />
+            <element signature="method#quickSortInternal3#0;class#Insert#0" />
+            <element signature="method#partition2#0;class#Insert#0" />
             <element signature="method#partition#0;class#Insert#0" />
+            <element signature="method#swap#0;class#Insert#0" />
+            <element signature="method#mergeSort#0;class#Insert#0" />
+            <element signature="method#mergeInternal#0;class#Insert#0" />
+            <element signature="method#merge#0;class#Insert#0" />
           </folding>
         </state>
       </provider>
@@ -323,8 +524,17 @@
             <element signature="method#selectionSort#0;class#Insert#0" />
             <element signature="method#generateArray#0;class#Insert#0" />
             <element signature="method#generateNearlySortArray#0;class#Insert#0" />
-            <element signature="method#quickSort#0;class#Insert#0" />
+            <element signature="method#quickSort2#0;class#Insert#0" />
+            <element signature="method#quickSort3#0;class#Insert#0" />
+            <element signature="method#quickSortInternal#0;class#Insert#0" />
+            <element signature="method#quickSortInternal2#0;class#Insert#0" />
+            <element signature="method#quickSortInternal3#0;class#Insert#0" />
+            <element signature="method#partition2#0;class#Insert#0" />
             <element signature="method#partition#0;class#Insert#0" />
+            <element signature="method#swap#0;class#Insert#0" />
+            <element signature="method#mergeSort#0;class#Insert#0" />
+            <element signature="method#mergeInternal#0;class#Insert#0" />
+            <element signature="method#merge#0;class#Insert#0" />
           </folding>
         </state>
       </provider>
@@ -356,8 +566,17 @@
             <element signature="method#selectionSort#0;class#Insert#0" />
             <element signature="method#generateArray#0;class#Insert#0" />
             <element signature="method#generateNearlySortArray#0;class#Insert#0" />
-            <element signature="method#quickSort#0;class#Insert#0" />
+            <element signature="method#quickSort2#0;class#Insert#0" />
+            <element signature="method#quickSort3#0;class#Insert#0" />
+            <element signature="method#quickSortInternal#0;class#Insert#0" />
+            <element signature="method#quickSortInternal2#0;class#Insert#0" />
+            <element signature="method#quickSortInternal3#0;class#Insert#0" />
+            <element signature="method#partition2#0;class#Insert#0" />
             <element signature="method#partition#0;class#Insert#0" />
+            <element signature="method#swap#0;class#Insert#0" />
+            <element signature="method#mergeSort#0;class#Insert#0" />
+            <element signature="method#mergeInternal#0;class#Insert#0" />
+            <element signature="method#merge#0;class#Insert#0" />
           </folding>
         </state>
       </provider>
@@ -389,8 +608,17 @@
             <element signature="method#selectionSort#0;class#Insert#0" />
             <element signature="method#generateArray#0;class#Insert#0" />
             <element signature="method#generateNearlySortArray#0;class#Insert#0" />
-            <element signature="method#quickSort#0;class#Insert#0" />
+            <element signature="method#quickSort2#0;class#Insert#0" />
+            <element signature="method#quickSort3#0;class#Insert#0" />
+            <element signature="method#quickSortInternal#0;class#Insert#0" />
+            <element signature="method#quickSortInternal2#0;class#Insert#0" />
+            <element signature="method#quickSortInternal3#0;class#Insert#0" />
+            <element signature="method#partition2#0;class#Insert#0" />
             <element signature="method#partition#0;class#Insert#0" />
+            <element signature="method#swap#0;class#Insert#0" />
+            <element signature="method#mergeSort#0;class#Insert#0" />
+            <element signature="method#mergeInternal#0;class#Insert#0" />
+            <element signature="method#merge#0;class#Insert#0" />
           </folding>
         </state>
       </provider>
@@ -415,8 +643,17 @@
             <element signature="method#selectionSort#0;class#Insert#0" />
             <element signature="method#generateArray#0;class#Insert#0" />
             <element signature="method#generateNearlySortArray#0;class#Insert#0" />
-            <element signature="method#quickSort#0;class#Insert#0" />
+            <element signature="method#quickSort2#0;class#Insert#0" />
+            <element signature="method#quickSort3#0;class#Insert#0" />
+            <element signature="method#quickSortInternal#0;class#Insert#0" />
+            <element signature="method#quickSortInternal2#0;class#Insert#0" />
+            <element signature="method#quickSortInternal3#0;class#Insert#0" />
+            <element signature="method#partition2#0;class#Insert#0" />
             <element signature="method#partition#0;class#Insert#0" />
+            <element signature="method#swap#0;class#Insert#0" />
+            <element signature="method#mergeSort#0;class#Insert#0" />
+            <element signature="method#mergeInternal#0;class#Insert#0" />
+            <element signature="method#merge#0;class#Insert#0" />
           </folding>
         </state>
       </provider>
@@ -455,8 +692,17 @@
             <element signature="method#selectionSort#0;class#Insert#0" />
             <element signature="method#generateArray#0;class#Insert#0" />
             <element signature="method#generateNearlySortArray#0;class#Insert#0" />
-            <element signature="method#quickSort#0;class#Insert#0" />
+            <element signature="method#quickSort2#0;class#Insert#0" />
+            <element signature="method#quickSort3#0;class#Insert#0" />
+            <element signature="method#quickSortInternal#0;class#Insert#0" />
+            <element signature="method#quickSortInternal2#0;class#Insert#0" />
+            <element signature="method#quickSortInternal3#0;class#Insert#0" />
+            <element signature="method#partition2#0;class#Insert#0" />
             <element signature="method#partition#0;class#Insert#0" />
+            <element signature="method#swap#0;class#Insert#0" />
+            <element signature="method#mergeSort#0;class#Insert#0" />
+            <element signature="method#mergeInternal#0;class#Insert#0" />
+            <element signature="method#merge#0;class#Insert#0" />
           </folding>
         </state>
       </provider>
@@ -488,8 +734,17 @@
             <element signature="method#selectionSort#0;class#Insert#0" />
             <element signature="method#generateArray#0;class#Insert#0" />
             <element signature="method#generateNearlySortArray#0;class#Insert#0" />
-            <element signature="method#quickSort#0;class#Insert#0" />
+            <element signature="method#quickSort2#0;class#Insert#0" />
+            <element signature="method#quickSort3#0;class#Insert#0" />
+            <element signature="method#quickSortInternal#0;class#Insert#0" />
+            <element signature="method#quickSortInternal2#0;class#Insert#0" />
+            <element signature="method#quickSortInternal3#0;class#Insert#0" />
+            <element signature="method#partition2#0;class#Insert#0" />
             <element signature="method#partition#0;class#Insert#0" />
+            <element signature="method#swap#0;class#Insert#0" />
+            <element signature="method#mergeSort#0;class#Insert#0" />
+            <element signature="method#mergeInternal#0;class#Insert#0" />
+            <element signature="method#merge#0;class#Insert#0" />
           </folding>
         </state>
       </provider>
@@ -521,8 +776,17 @@
             <element signature="method#selectionSort#0;class#Insert#0" />
             <element signature="method#generateArray#0;class#Insert#0" />
             <element signature="method#generateNearlySortArray#0;class#Insert#0" />
-            <element signature="method#quickSort#0;class#Insert#0" />
+            <element signature="method#quickSort2#0;class#Insert#0" />
+            <element signature="method#quickSort3#0;class#Insert#0" />
+            <element signature="method#quickSortInternal#0;class#Insert#0" />
+            <element signature="method#quickSortInternal2#0;class#Insert#0" />
+            <element signature="method#quickSortInternal3#0;class#Insert#0" />
+            <element signature="method#partition2#0;class#Insert#0" />
             <element signature="method#partition#0;class#Insert#0" />
+            <element signature="method#swap#0;class#Insert#0" />
+            <element signature="method#mergeSort#0;class#Insert#0" />
+            <element signature="method#mergeInternal#0;class#Insert#0" />
+            <element signature="method#merge#0;class#Insert#0" />
           </folding>
         </state>
       </provider>
@@ -554,8 +818,17 @@
             <element signature="method#selectionSort#0;class#Insert#0" />
             <element signature="method#generateArray#0;class#Insert#0" />
             <element signature="method#generateNearlySortArray#0;class#Insert#0" />
-            <element signature="method#quickSort#0;class#Insert#0" />
+            <element signature="method#quickSort2#0;class#Insert#0" />
+            <element signature="method#quickSort3#0;class#Insert#0" />
+            <element signature="method#quickSortInternal#0;class#Insert#0" />
+            <element signature="method#quickSortInternal2#0;class#Insert#0" />
+            <element signature="method#quickSortInternal3#0;class#Insert#0" />
+            <element signature="method#partition2#0;class#Insert#0" />
             <element signature="method#partition#0;class#Insert#0" />
+            <element signature="method#swap#0;class#Insert#0" />
+            <element signature="method#mergeSort#0;class#Insert#0" />
+            <element signature="method#mergeInternal#0;class#Insert#0" />
+            <element signature="method#merge#0;class#Insert#0" />
           </folding>
         </state>
       </provider>
@@ -590,15 +863,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Day08/Test/Test1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        <state relative-caret-position="79">
+          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Day08/Test/Insert.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="234" column="30" selection-start-line="234" selection-start-column="30" selection-end-line="234" selection-end-column="30" />
+        <state relative-caret-position="85">
+          <caret line="275" column="50" selection-start-line="275" selection-start-column="50" selection-end-line="275" selection-end-column="50" />
           <folding>
             <element signature="method#bubbleSort#0;class#Insert#0" />
             <element signature="method#insertSort#0;class#Insert#0" />
@@ -608,8 +881,17 @@
             <element signature="method#selectionSort#0;class#Insert#0" />
             <element signature="method#generateArray#0;class#Insert#0" />
             <element signature="method#generateNearlySortArray#0;class#Insert#0" />
-            <element signature="method#quickSort#0;class#Insert#0" />
+            <element signature="method#quickSort2#0;class#Insert#0" />
+            <element signature="method#quickSort3#0;class#Insert#0" />
+            <element signature="method#quickSortInternal#0;class#Insert#0" />
+            <element signature="method#quickSortInternal2#0;class#Insert#0" />
+            <element signature="method#quickSortInternal3#0;class#Insert#0" />
+            <element signature="method#partition2#0;class#Insert#0" />
             <element signature="method#partition#0;class#Insert#0" />
+            <element signature="method#swap#0;class#Insert#0" />
+            <element signature="method#mergeSort#0;class#Insert#0" />
+            <element signature="method#mergeInternal#0;class#Insert#0" />
+            <element signature="method#merge#0;class#Insert#0" />
           </folding>
         </state>
       </provider>
