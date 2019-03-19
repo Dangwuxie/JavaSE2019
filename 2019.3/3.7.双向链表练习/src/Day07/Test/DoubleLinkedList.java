@@ -123,6 +123,7 @@ public class DoubleLinkedList implements Sequence {
         }
         return false;
     }
+
     @Override
     public Object set(int index, Object newData) {
         rangeCheck(index);
@@ -133,6 +134,7 @@ public class DoubleLinkedList implements Sequence {
         temp.data = newData;
         return null;
     }
+
     public Node node(int index){
         Node node = head;
         for (int i = 0;i < index;i++){
