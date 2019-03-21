@@ -1,6 +1,6 @@
 package Day19.Test;
 //引用某个类的普通方法
-
+@FunctionalInterface
 interface Person3<P,R>{
     P switchPara(R r,R r2);
 }
