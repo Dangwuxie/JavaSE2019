@@ -22,5 +22,6 @@ public class Test1 {
         Class cls4 = Class.forName("Day21.Test.Person1");
         System.out.println(cls3);
         System.out.println(cls4);
-    }
+
+}
 }
