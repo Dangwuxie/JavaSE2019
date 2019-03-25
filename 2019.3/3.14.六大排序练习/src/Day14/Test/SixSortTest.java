@@ -143,17 +143,45 @@ public class SixSortTest {
         }
 
     }
+
+    /**
+     * 选择排序，也分未排序空间和已排序空间
+     * 但是每次是将未排序空间最小的额元素放到已
+     * 排序空间的最末尾，直到未排序空间元素个数为0；
+     * @param data
+     */
+    public static void selectSort(int[] data){
+        int n = data.length;
+        if (n <= 1)return;;
+        //下面直接开始循环，默认刚开始的数组元素是乱序的；
+        for (int i = 0 ;i < n-1;i++){
+            //先查找最小值；
+            int minIndex = i;
+            for (int j = i+1;j < n;j++){
+                if (data[j] < data[i]){
+                    //注意这里直接交换下标，
+                    //所以minIndex一直指向的是最小元素的下标；
+                    minIndex = j;
+                }
+            }
+            //循环完了之后呢，交换到已排序空间的最后一个元素；
+            int temp = data[i];
+            data[i] = data[j];
+            data[j] = temp;
+            //这里注意，i一直指向已排序部分的最后一个元素；
+            //就是要交换的哪个元素；
+        }
+    }
     /**
      * 输出排序后的数组；
      * @param data 要输出的数组；
      */
+
     public static void printArray(int[] data){
         for (int o:data) {
             System.out.print(o+" ");
         }
     }
-
-
 
 
 }
