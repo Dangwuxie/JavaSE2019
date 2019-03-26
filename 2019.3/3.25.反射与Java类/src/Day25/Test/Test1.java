@@ -1,9 +1,11 @@
 package Day25.Test;
 
 
+import java.lang.reflect.InvocationTargetException;
+
 public class Test1 {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException {
 	// write your code here
         String str = "emp.name:sdsdvsdv|emp.job:coder";
         //下面就是设置当前对额字符串给对象属性emp
