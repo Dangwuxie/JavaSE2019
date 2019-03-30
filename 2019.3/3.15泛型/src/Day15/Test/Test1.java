@@ -12,7 +12,9 @@ public class Test1 {
         Iutil<String,Integer> iu = String :: valueOf;
         String str = iu.print(1000);
         System.out.println(str.length());
-        Iutil<String,Integer> iu = () -> System.out.println(str.length());
+       // Iutil<String,Integer> iu = () -> System.out.println(str.length());
+        System.out.println();
+        System.out.println();
 
         //引用对象方法
         //Iutil2<String> str2 = "hello"::toUpperCase;
