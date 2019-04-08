@@ -1,5 +1,7 @@
 package Day14.Test;
 
+import java.io.InputStream;
+
 public class Test1 {
 
     public static void main(String[] args) {
@@ -10,6 +12,7 @@ public class Test1 {
         //SixSortTest.binaryInsertSort(data);
         SixSortTest.shellSort(data);
         SixSortTest.printArray(data);
+        InputStream
 
     }
 }

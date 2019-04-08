@@ -40,18 +40,19 @@ public class Insert {
         }else{
             for (int i = 1;i < dabs.length;i++){
                 int value = dabs[i];
-                for (int j = i-1;j >= 0;j--){
-                    if (dabs[j] < value){
-                        dabs[j+1] = value;
-                    }else{
+                int j = i-1;
+                for (;j >= 0;j--){
+                    if (dabs[j] > value){
                         dabs[j+1] = dabs[j];
+                    }else{
+                        break;
+                        /*dabs[j+1] = dabs[j];
                         if (j == 0){
                             dabs[j] = value;
-                        }
+                        }*/
                     }
-
                 }
-
+                dabs[j+1] = value;
             }
         }
         long end = System.currentTimeMillis();
@@ -92,17 +93,16 @@ public class Insert {
                     dabs[j+1] = dabs[j];
                 }
                 dabs[j+1] = value;
-               // }
             }
         }
+
         long end = System.currentTimeMillis();
         System.out.println("折半插入排序耗时"+(end-start)+"毫秒");
     }
-
     /**
      * 希尔排序，就是把一串数据依次分成从大到小的模块
      * 每次采用插入排序法排完区块里的数据后再逐渐减少模块的大小
-     * 知道模块为单个元素截至；
+     * 知道模块为单个元素截止；
      * @param data
      */
     public static void shellSort(int[] data){
@@ -150,20 +150,23 @@ public class Insert {
      * @param data
      */
     public static void selectionSort(int[] data){
-
-        int n = data.length;
-        for (int i = 0;i < n-1;i++){
-            int minIndex = i;
-            for (int j = i+1;j < n;j++){
-                if (data[minIndex] > data[j]){
-                    minIndex = j;
-                }
-            }
-            int temp = data[i];
-            data[i] = data[minIndex];
-            data[minIndex] = temp;
-        }
         long start = System.currentTimeMillis();
+        int n = data.length;
+        if (n <= 1){
+            return;
+        }else{
+            for (int i = 0;i < n-1;i++){
+                int minIndex = i;
+                for (int j = i+1;j < n;j++){
+                    if (data[minIndex] > data[j]){
+                        minIndex = j;
+                    }
+                }
+                int temp = data[i];
+                data[i] = data[minIndex];
+                data[minIndex] = temp;
+            }
+        }
         long end = System.currentTimeMillis();
         System.out.println("选择排序的耗时为"+(end - start)+"毫秒");
     }
@@ -190,7 +193,6 @@ public class Insert {
      * 生成一个近乎有序的数组
      * @param n 要生成的数据大小
      * @param switchTimes 要交换的次数
-     * @param range 随机生成范围
      * @return
      */
     public static int[] generateNearlySortArray(int n,int switchTimes){
@@ -269,6 +271,12 @@ public class Insert {
         quickSortInternal3(array,l,pivot-1);
         quickSortInternal3(array,pivot+1,r);
     }
+    /**
+     *  分区点
+     * @param array 传入的数组
+     * @param l  左边界
+     * @param y  右边界
+     */
     private static int partition3(int[] array,int l,int r){
         //三个指针，lt永远指向小于pivot区域的最后个元素
         //gt永远指向大于pivot区域的的第一个元素
@@ -278,7 +286,7 @@ public class Insert {
         int lt = l;//刚开始lt指向小于v区域的前一个位置；即初始位置；
         int i = l+1;
         int gt = r+1;//同样gt后向前遍历，初始指向大于v区域的前一个位置；
-        //下面开始遍历,从i+1处开始遍历
+        //下面开始遍历,从l+1处开始遍历
         while (i < gt){
             if (array[i] < value){
                 swap(array,i,lt+1);
@@ -291,7 +299,7 @@ public class Insert {
                 //必须再次比较
                 //前一个if入口的i++是因为当前i所指的元素就是换过来的小于
                 //v的值，所以直接遍历下一个元素就行；
-               // i++;
+                // i++;
             }else{
                 i++;
             }
@@ -301,6 +309,26 @@ public class Insert {
         swap(array,l,lt);
         return lt;
     }
+    private static int partition(int[] array,int l,int r){
+        //每次以第一个元素为分区点进行快排，
+        //对一个近乎有序并且特别大的数列进行快排会发生栈溢出
+        //因为栈内存不够用，递归不下去了；
+        int randomIndex = (int) ((Math.random()*(r-l+1))+l);
+        swap(array,l,randomIndex);
+        int v = array[l];
+        int j = l;
+        int i = l + 1 ;
+        for (;i <= r;i++){
+            if (array[i] < v){
+                swap(array,j+1,i);
+                j++;
+            }
+        }
+        swap(array,l,j);
+        return j;
+    }
+
+
     private static int partition2(int[] data,int left,int right){
 
         int i = left+1;
@@ -321,30 +349,6 @@ public class Insert {
             j--;
         }
         swap(data,left,j);
-        return j;
-    }
-    /**
-     *  分区点
-     * @param array
-     * @param l
-     * @param y
-     */
-    private static int partition(int[] array,int l,int r){
-        //每次以第一个元素为分区点进行快排，
-        //对一个近乎有序并且特别大的数列进行快排会发生栈溢出
-        //因为栈内存不够用，递归不下去了；
-        int randomIndex = (int) ((Math.random()*(r-l+1))+l);
-        swap(array,l,randomIndex);
-        int v = array[l];
-        int j = l;
-        int i = l + 1 ;
-        for (;i <= r;i++){
-            if (array[i] < v){
-                swap(array,j+1,i);
-                j++;
-            }
-        }
-        swap(array,l,j);
         return j;
     }
 
@@ -382,15 +386,24 @@ public class Insert {
         //合并两个小数组
         merge(array,low,mid,high);
     }
-    private static void merge(int[] array,int p,int q,int r){
+
+    /**
+     *
+     * @param array  分开之前的大数组
+     * @param p  两个小数组最左边的下标
+     * @param q  两个小数组分割点元素
+     * @param r  两个小数组最右边的下标
+     */
+    private static void merge(int[] array,int p,int m,int r){
         //把两个有序的数组合成大的有序数组，需要借助临时空间来解决
         //临时空间的大小等于两个小数组的长度之和；
+        //i和j分别是两个小数组的起始点下标；
         int i = p;
-        int j = q + 1;
+        int j = m + 1;
         int[] temp = new int[r-p+1];
         int k = 0;
         //此时两个数组中均有元素
-        while (i <= q && j <= r){
+        while (i <= m && j <= r){
             if (array[i] <= array[j]){
                 //此处加上等于号是为了保证稳定性；
                 temp[k++] = array[i++];
@@ -400,7 +413,7 @@ public class Insert {
         }
         //判断当前还有哪个数组元素没有走完；
         int start = i;
-        int end = q;
+        int end = m;
         if (j <= r){
             start = j;
             end = r;
@@ -414,6 +427,5 @@ public class Insert {
             array[p+i] = temp[i];
         }
     }
-
 }
 

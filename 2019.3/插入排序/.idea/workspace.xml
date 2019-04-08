@@ -15,8 +15,8 @@
       <file leaf-file-name="Test1.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Day08/Test/Test1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+            <state relative-caret-position="544">
+              <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -24,8 +24,8 @@
       <file leaf-file-name="Insert.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Day08/Test/Insert.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="275" column="50" selection-start-line="275" selection-start-column="50" selection-end-line="275" selection-end-column="50" />
+            <state relative-caret-position="1581">
+              <caret line="387" column="5" lean-forward="true" selection-start-line="387" selection-start-column="5" selection-end-line="387" selection-end-column="5" />
               <folding>
                 <element signature="method#bubbleSort#0;class#Insert#0" />
                 <element signature="method#insertSort#0;class#Insert#0" />
@@ -35,13 +35,15 @@
                 <element signature="method#selectionSort#0;class#Insert#0" />
                 <element signature="method#generateArray#0;class#Insert#0" />
                 <element signature="method#generateNearlySortArray#0;class#Insert#0" />
+                <element signature="method#quickSort#0;class#Insert#0" />
                 <element signature="method#quickSort2#0;class#Insert#0" />
                 <element signature="method#quickSort3#0;class#Insert#0" />
                 <element signature="method#quickSortInternal#0;class#Insert#0" />
                 <element signature="method#quickSortInternal2#0;class#Insert#0" />
                 <element signature="method#quickSortInternal3#0;class#Insert#0" />
-                <element signature="method#partition2#0;class#Insert#0" />
+                <element signature="method#partition3#0;class#Insert#0" />
                 <element signature="method#partition#0;class#Insert#0" />
+                <element signature="method#partition2#0;class#Insert#0" />
                 <element signature="method#swap#0;class#Insert#0" />
                 <element signature="method#mergeSort#0;class#Insert#0" />
                 <element signature="method#mergeInternal#0;class#Insert#0" />
@@ -98,7 +100,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -111,25 +115,10 @@
               <item name="插入排序" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="插入排序" type="b2602c69:ProjectViewProjectNode" />
-              <item name="插入排序" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Day08" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="插入排序" type="b2602c69:ProjectViewProjectNode" />
-              <item name="插入排序" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Day08" type="462c0819:PsiDirectoryNode" />
-              <item name="Test" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -193,11 +182,15 @@
       <workItem from="1552748183408" duration="4843000" />
       <workItem from="1552824322955" duration="6112000" />
       <workItem from="1552926626810" duration="44000" />
+      <workItem from="1554390532982" duration="9644000" />
+      <workItem from="1554481343981" duration="240000" />
+      <workItem from="1554559987916" duration="32000" />
+      <workItem from="1554561230017" duration="6293000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71095000" />
+    <option name="totallyTimeSpent" value="87304000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
@@ -211,27 +204,27 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24758843" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.12861736" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16081187" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.030444965" />
       <window_info anchor="bottom" id="Profiler" order="7" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.46623793" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32850242" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.329582" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,7 +235,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="17" />
+      <option name="time" value="21" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -264,27 +257,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4675">
           <caret line="275" column="50" selection-start-line="275" selection-start-column="50" selection-end-line="275" selection-end-column="50" />
-          <folding>
-            <element signature="method#bubbleSort#0;class#Insert#0" />
-            <element signature="method#insertSort#0;class#Insert#0" />
-            <element signature="method#binaryInsertSort#0;class#Insert#0" />
-            <element signature="method#shellSort#0;class#Insert#0" />
-            <element signature="method#print#0;class#Insert#0" />
-            <element signature="method#selectionSort#0;class#Insert#0" />
-            <element signature="method#generateArray#0;class#Insert#0" />
-            <element signature="method#generateNearlySortArray#0;class#Insert#0" />
-            <element signature="method#quickSort2#0;class#Insert#0" />
-            <element signature="method#quickSort3#0;class#Insert#0" />
-            <element signature="method#quickSortInternal#0;class#Insert#0" />
-            <element signature="method#quickSortInternal2#0;class#Insert#0" />
-            <element signature="method#quickSortInternal3#0;class#Insert#0" />
-            <element signature="method#partition2#0;class#Insert#0" />
-            <element signature="method#partition#0;class#Insert#0" />
-            <element signature="method#swap#0;class#Insert#0" />
-            <element signature="method#mergeSort#0;class#Insert#0" />
-            <element signature="method#mergeInternal#0;class#Insert#0" />
-            <element signature="method#merge#0;class#Insert#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -299,27 +271,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1258">
           <caret line="271" column="58" selection-start-line="271" selection-start-column="58" selection-end-line="271" selection-end-column="58" />
-          <folding>
-            <element signature="method#bubbleSort#0;class#Insert#0" />
-            <element signature="method#insertSort#0;class#Insert#0" />
-            <element signature="method#binaryInsertSort#0;class#Insert#0" />
-            <element signature="method#shellSort#0;class#Insert#0" />
-            <element signature="method#print#0;class#Insert#0" />
-            <element signature="method#selectionSort#0;class#Insert#0" />
-            <element signature="method#generateArray#0;class#Insert#0" />
-            <element signature="method#generateNearlySortArray#0;class#Insert#0" />
-            <element signature="method#quickSort2#0;class#Insert#0" />
-            <element signature="method#quickSort3#0;class#Insert#0" />
-            <element signature="method#quickSortInternal#0;class#Insert#0" />
-            <element signature="method#quickSortInternal2#0;class#Insert#0" />
-            <element signature="method#quickSortInternal3#0;class#Insert#0" />
-            <element signature="method#partition2#0;class#Insert#0" />
-            <element signature="method#partition#0;class#Insert#0" />
-            <element signature="method#swap#0;class#Insert#0" />
-            <element signature="method#mergeSort#0;class#Insert#0" />
-            <element signature="method#mergeInternal#0;class#Insert#0" />
-            <element signature="method#merge#0;class#Insert#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -348,27 +299,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1190">
           <caret line="236" column="46" selection-start-line="236" selection-start-column="46" selection-end-line="236" selection-end-column="46" />
-          <folding>
-            <element signature="method#bubbleSort#0;class#Insert#0" />
-            <element signature="method#insertSort#0;class#Insert#0" />
-            <element signature="method#binaryInsertSort#0;class#Insert#0" />
-            <element signature="method#shellSort#0;class#Insert#0" />
-            <element signature="method#print#0;class#Insert#0" />
-            <element signature="method#selectionSort#0;class#Insert#0" />
-            <element signature="method#generateArray#0;class#Insert#0" />
-            <element signature="method#generateNearlySortArray#0;class#Insert#0" />
-            <element signature="method#quickSort2#0;class#Insert#0" />
-            <element signature="method#quickSort3#0;class#Insert#0" />
-            <element signature="method#quickSortInternal#0;class#Insert#0" />
-            <element signature="method#quickSortInternal2#0;class#Insert#0" />
-            <element signature="method#quickSortInternal3#0;class#Insert#0" />
-            <element signature="method#partition2#0;class#Insert#0" />
-            <element signature="method#partition#0;class#Insert#0" />
-            <element signature="method#swap#0;class#Insert#0" />
-            <element signature="method#mergeSort#0;class#Insert#0" />
-            <element signature="method#mergeInternal#0;class#Insert#0" />
-            <element signature="method#merge#0;class#Insert#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -390,27 +320,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1190">
           <caret line="236" column="46" selection-start-line="236" selection-start-column="46" selection-end-line="236" selection-end-column="46" />
-          <folding>
-            <element signature="method#bubbleSort#0;class#Insert#0" />
-            <element signature="method#insertSort#0;class#Insert#0" />
-            <element signature="method#binaryInsertSort#0;class#Insert#0" />
-            <element signature="method#shellSort#0;class#Insert#0" />
-            <element signature="method#print#0;class#Insert#0" />
-            <element signature="method#selectionSort#0;class#Insert#0" />
-            <element signature="method#generateArray#0;class#Insert#0" />
-            <element signature="method#generateNearlySortArray#0;class#Insert#0" />
-            <element signature="method#quickSort2#0;class#Insert#0" />
-            <element signature="method#quickSort3#0;class#Insert#0" />
-            <element signature="method#quickSortInternal#0;class#Insert#0" />
-            <element signature="method#quickSortInternal2#0;class#Insert#0" />
-            <element signature="method#quickSortInternal3#0;class#Insert#0" />
-            <element signature="method#partition2#0;class#Insert#0" />
-            <element signature="method#partition#0;class#Insert#0" />
-            <element signature="method#swap#0;class#Insert#0" />
-            <element signature="method#mergeSort#0;class#Insert#0" />
-            <element signature="method#mergeInternal#0;class#Insert#0" />
-            <element signature="method#merge#0;class#Insert#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -432,27 +341,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3978">
           <caret line="234" column="30" selection-start-line="234" selection-start-column="30" selection-end-line="234" selection-end-column="30" />
-          <folding>
-            <element signature="method#bubbleSort#0;class#Insert#0" />
-            <element signature="method#insertSort#0;class#Insert#0" />
-            <element signature="method#binaryInsertSort#0;class#Insert#0" />
-            <element signature="method#shellSort#0;class#Insert#0" />
-            <element signature="method#print#0;class#Insert#0" />
-            <element signature="method#selectionSort#0;class#Insert#0" />
-            <element signature="method#generateArray#0;class#Insert#0" />
-            <element signature="method#generateNearlySortArray#0;class#Insert#0" />
-            <element signature="method#quickSort2#0;class#Insert#0" />
-            <element signature="method#quickSort3#0;class#Insert#0" />
-            <element signature="method#quickSortInternal#0;class#Insert#0" />
-            <element signature="method#quickSortInternal2#0;class#Insert#0" />
-            <element signature="method#quickSortInternal3#0;class#Insert#0" />
-            <element signature="method#partition2#0;class#Insert#0" />
-            <element signature="method#partition#0;class#Insert#0" />
-            <element signature="method#swap#0;class#Insert#0" />
-            <element signature="method#mergeSort#0;class#Insert#0" />
-            <element signature="method#mergeInternal#0;class#Insert#0" />
-            <element signature="method#merge#0;class#Insert#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -474,27 +362,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1394">
           <caret line="230" lean-forward="true" selection-start-line="230" selection-end-line="230" />
-          <folding>
-            <element signature="method#bubbleSort#0;class#Insert#0" />
-            <element signature="method#insertSort#0;class#Insert#0" />
-            <element signature="method#binaryInsertSort#0;class#Insert#0" />
-            <element signature="method#shellSort#0;class#Insert#0" />
-            <element signature="method#print#0;class#Insert#0" />
-            <element signature="method#selectionSort#0;class#Insert#0" />
-            <element signature="method#generateArray#0;class#Insert#0" />
-            <element signature="method#generateNearlySortArray#0;class#Insert#0" />
-            <element signature="method#quickSort2#0;class#Insert#0" />
-            <element signature="method#quickSort3#0;class#Insert#0" />
-            <element signature="method#quickSortInternal#0;class#Insert#0" />
-            <element signature="method#quickSortInternal2#0;class#Insert#0" />
-            <element signature="method#quickSortInternal3#0;class#Insert#0" />
-            <element signature="method#partition2#0;class#Insert#0" />
-            <element signature="method#partition#0;class#Insert#0" />
-            <element signature="method#swap#0;class#Insert#0" />
-            <element signature="method#mergeSort#0;class#Insert#0" />
-            <element signature="method#mergeInternal#0;class#Insert#0" />
-            <element signature="method#merge#0;class#Insert#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -509,27 +376,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4301">
           <caret line="253" column="11" selection-start-line="253" selection-start-column="11" selection-end-line="253" selection-end-column="11" />
-          <folding>
-            <element signature="method#bubbleSort#0;class#Insert#0" />
-            <element signature="method#insertSort#0;class#Insert#0" />
-            <element signature="method#binaryInsertSort#0;class#Insert#0" />
-            <element signature="method#shellSort#0;class#Insert#0" />
-            <element signature="method#print#0;class#Insert#0" />
-            <element signature="method#selectionSort#0;class#Insert#0" />
-            <element signature="method#generateArray#0;class#Insert#0" />
-            <element signature="method#generateNearlySortArray#0;class#Insert#0" />
-            <element signature="method#quickSort2#0;class#Insert#0" />
-            <element signature="method#quickSort3#0;class#Insert#0" />
-            <element signature="method#quickSortInternal#0;class#Insert#0" />
-            <element signature="method#quickSortInternal2#0;class#Insert#0" />
-            <element signature="method#quickSortInternal3#0;class#Insert#0" />
-            <element signature="method#partition2#0;class#Insert#0" />
-            <element signature="method#partition#0;class#Insert#0" />
-            <element signature="method#swap#0;class#Insert#0" />
-            <element signature="method#mergeSort#0;class#Insert#0" />
-            <element signature="method#mergeInternal#0;class#Insert#0" />
-            <element signature="method#merge#0;class#Insert#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -558,27 +404,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1462">
           <caret line="234" column="56" selection-start-line="234" selection-start-column="56" selection-end-line="234" selection-end-column="56" />
-          <folding>
-            <element signature="method#bubbleSort#0;class#Insert#0" />
-            <element signature="method#insertSort#0;class#Insert#0" />
-            <element signature="method#binaryInsertSort#0;class#Insert#0" />
-            <element signature="method#shellSort#0;class#Insert#0" />
-            <element signature="method#print#0;class#Insert#0" />
-            <element signature="method#selectionSort#0;class#Insert#0" />
-            <element signature="method#generateArray#0;class#Insert#0" />
-            <element signature="method#generateNearlySortArray#0;class#Insert#0" />
-            <element signature="method#quickSort2#0;class#Insert#0" />
-            <element signature="method#quickSort3#0;class#Insert#0" />
-            <element signature="method#quickSortInternal#0;class#Insert#0" />
-            <element signature="method#quickSortInternal2#0;class#Insert#0" />
-            <element signature="method#quickSortInternal3#0;class#Insert#0" />
-            <element signature="method#partition2#0;class#Insert#0" />
-            <element signature="method#partition#0;class#Insert#0" />
-            <element signature="method#swap#0;class#Insert#0" />
-            <element signature="method#mergeSort#0;class#Insert#0" />
-            <element signature="method#mergeInternal#0;class#Insert#0" />
-            <element signature="method#merge#0;class#Insert#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -600,27 +425,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3978">
           <caret line="234" column="56" selection-start-line="234" selection-start-column="56" selection-end-line="234" selection-end-column="56" />
-          <folding>
-            <element signature="method#bubbleSort#0;class#Insert#0" />
-            <element signature="method#insertSort#0;class#Insert#0" />
-            <element signature="method#binaryInsertSort#0;class#Insert#0" />
-            <element signature="method#shellSort#0;class#Insert#0" />
-            <element signature="method#print#0;class#Insert#0" />
-            <element signature="method#selectionSort#0;class#Insert#0" />
-            <element signature="method#generateArray#0;class#Insert#0" />
-            <element signature="method#generateNearlySortArray#0;class#Insert#0" />
-            <element signature="method#quickSort2#0;class#Insert#0" />
-            <element signature="method#quickSort3#0;class#Insert#0" />
-            <element signature="method#quickSortInternal#0;class#Insert#0" />
-            <element signature="method#quickSortInternal2#0;class#Insert#0" />
-            <element signature="method#quickSortInternal3#0;class#Insert#0" />
-            <element signature="method#partition2#0;class#Insert#0" />
-            <element signature="method#partition#0;class#Insert#0" />
-            <element signature="method#swap#0;class#Insert#0" />
-            <element signature="method#mergeSort#0;class#Insert#0" />
-            <element signature="method#mergeInternal#0;class#Insert#0" />
-            <element signature="method#merge#0;class#Insert#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -642,27 +446,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3978">
           <caret line="234" column="56" selection-start-line="234" selection-start-column="56" selection-end-line="234" selection-end-column="56" />
-          <folding>
-            <element signature="method#bubbleSort#0;class#Insert#0" />
-            <element signature="method#insertSort#0;class#Insert#0" />
-            <element signature="method#binaryInsertSort#0;class#Insert#0" />
-            <element signature="method#shellSort#0;class#Insert#0" />
-            <element signature="method#print#0;class#Insert#0" />
-            <element signature="method#selectionSort#0;class#Insert#0" />
-            <element signature="method#generateArray#0;class#Insert#0" />
-            <element signature="method#generateNearlySortArray#0;class#Insert#0" />
-            <element signature="method#quickSort2#0;class#Insert#0" />
-            <element signature="method#quickSort3#0;class#Insert#0" />
-            <element signature="method#quickSortInternal#0;class#Insert#0" />
-            <element signature="method#quickSortInternal2#0;class#Insert#0" />
-            <element signature="method#quickSortInternal3#0;class#Insert#0" />
-            <element signature="method#partition2#0;class#Insert#0" />
-            <element signature="method#partition#0;class#Insert#0" />
-            <element signature="method#swap#0;class#Insert#0" />
-            <element signature="method#mergeSort#0;class#Insert#0" />
-            <element signature="method#mergeInternal#0;class#Insert#0" />
-            <element signature="method#merge#0;class#Insert#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -677,27 +460,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1938">
           <caret line="230" lean-forward="true" selection-start-line="230" selection-end-line="230" />
-          <folding>
-            <element signature="method#bubbleSort#0;class#Insert#0" />
-            <element signature="method#insertSort#0;class#Insert#0" />
-            <element signature="method#binaryInsertSort#0;class#Insert#0" />
-            <element signature="method#shellSort#0;class#Insert#0" />
-            <element signature="method#print#0;class#Insert#0" />
-            <element signature="method#selectionSort#0;class#Insert#0" />
-            <element signature="method#generateArray#0;class#Insert#0" />
-            <element signature="method#generateNearlySortArray#0;class#Insert#0" />
-            <element signature="method#quickSort2#0;class#Insert#0" />
-            <element signature="method#quickSort3#0;class#Insert#0" />
-            <element signature="method#quickSortInternal#0;class#Insert#0" />
-            <element signature="method#quickSortInternal2#0;class#Insert#0" />
-            <element signature="method#quickSortInternal3#0;class#Insert#0" />
-            <element signature="method#partition2#0;class#Insert#0" />
-            <element signature="method#partition#0;class#Insert#0" />
-            <element signature="method#swap#0;class#Insert#0" />
-            <element signature="method#mergeSort#0;class#Insert#0" />
-            <element signature="method#mergeInternal#0;class#Insert#0" />
-            <element signature="method#merge#0;class#Insert#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -726,27 +488,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3196">
           <caret line="188" column="7" lean-forward="true" selection-start-line="188" selection-start-column="7" selection-end-line="188" selection-end-column="7" />
-          <folding>
-            <element signature="method#bubbleSort#0;class#Insert#0" />
-            <element signature="method#insertSort#0;class#Insert#0" />
-            <element signature="method#binaryInsertSort#0;class#Insert#0" />
-            <element signature="method#shellSort#0;class#Insert#0" />
-            <element signature="method#print#0;class#Insert#0" />
-            <element signature="method#selectionSort#0;class#Insert#0" />
-            <element signature="method#generateArray#0;class#Insert#0" />
-            <element signature="method#generateNearlySortArray#0;class#Insert#0" />
-            <element signature="method#quickSort2#0;class#Insert#0" />
-            <element signature="method#quickSort3#0;class#Insert#0" />
-            <element signature="method#quickSortInternal#0;class#Insert#0" />
-            <element signature="method#quickSortInternal2#0;class#Insert#0" />
-            <element signature="method#quickSortInternal3#0;class#Insert#0" />
-            <element signature="method#partition2#0;class#Insert#0" />
-            <element signature="method#partition#0;class#Insert#0" />
-            <element signature="method#swap#0;class#Insert#0" />
-            <element signature="method#mergeSort#0;class#Insert#0" />
-            <element signature="method#mergeInternal#0;class#Insert#0" />
-            <element signature="method#merge#0;class#Insert#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -768,27 +509,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
-          <folding>
-            <element signature="method#bubbleSort#0;class#Insert#0" />
-            <element signature="method#insertSort#0;class#Insert#0" />
-            <element signature="method#binaryInsertSort#0;class#Insert#0" />
-            <element signature="method#shellSort#0;class#Insert#0" />
-            <element signature="method#print#0;class#Insert#0" />
-            <element signature="method#selectionSort#0;class#Insert#0" />
-            <element signature="method#generateArray#0;class#Insert#0" />
-            <element signature="method#generateNearlySortArray#0;class#Insert#0" />
-            <element signature="method#quickSort2#0;class#Insert#0" />
-            <element signature="method#quickSort3#0;class#Insert#0" />
-            <element signature="method#quickSortInternal#0;class#Insert#0" />
-            <element signature="method#quickSortInternal2#0;class#Insert#0" />
-            <element signature="method#quickSortInternal3#0;class#Insert#0" />
-            <element signature="method#partition2#0;class#Insert#0" />
-            <element signature="method#partition#0;class#Insert#0" />
-            <element signature="method#swap#0;class#Insert#0" />
-            <element signature="method#mergeSort#0;class#Insert#0" />
-            <element signature="method#mergeInternal#0;class#Insert#0" />
-            <element signature="method#merge#0;class#Insert#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -810,27 +530,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="48" selection-start-line="48" selection-end-line="48" />
-          <folding>
-            <element signature="method#bubbleSort#0;class#Insert#0" />
-            <element signature="method#insertSort#0;class#Insert#0" />
-            <element signature="method#binaryInsertSort#0;class#Insert#0" />
-            <element signature="method#shellSort#0;class#Insert#0" />
-            <element signature="method#print#0;class#Insert#0" />
-            <element signature="method#selectionSort#0;class#Insert#0" />
-            <element signature="method#generateArray#0;class#Insert#0" />
-            <element signature="method#generateNearlySortArray#0;class#Insert#0" />
-            <element signature="method#quickSort2#0;class#Insert#0" />
-            <element signature="method#quickSort3#0;class#Insert#0" />
-            <element signature="method#quickSortInternal#0;class#Insert#0" />
-            <element signature="method#quickSortInternal2#0;class#Insert#0" />
-            <element signature="method#quickSortInternal3#0;class#Insert#0" />
-            <element signature="method#partition2#0;class#Insert#0" />
-            <element signature="method#partition#0;class#Insert#0" />
-            <element signature="method#swap#0;class#Insert#0" />
-            <element signature="method#mergeSort#0;class#Insert#0" />
-            <element signature="method#mergeInternal#0;class#Insert#0" />
-            <element signature="method#merge#0;class#Insert#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -852,27 +551,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="40" lean-forward="true" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
-          <folding>
-            <element signature="method#bubbleSort#0;class#Insert#0" />
-            <element signature="method#insertSort#0;class#Insert#0" />
-            <element signature="method#binaryInsertSort#0;class#Insert#0" />
-            <element signature="method#shellSort#0;class#Insert#0" />
-            <element signature="method#print#0;class#Insert#0" />
-            <element signature="method#selectionSort#0;class#Insert#0" />
-            <element signature="method#generateArray#0;class#Insert#0" />
-            <element signature="method#generateNearlySortArray#0;class#Insert#0" />
-            <element signature="method#quickSort2#0;class#Insert#0" />
-            <element signature="method#quickSort3#0;class#Insert#0" />
-            <element signature="method#quickSortInternal#0;class#Insert#0" />
-            <element signature="method#quickSortInternal2#0;class#Insert#0" />
-            <element signature="method#quickSortInternal3#0;class#Insert#0" />
-            <element signature="method#partition2#0;class#Insert#0" />
-            <element signature="method#partition#0;class#Insert#0" />
-            <element signature="method#swap#0;class#Insert#0" />
-            <element signature="method#mergeSort#0;class#Insert#0" />
-            <element signature="method#mergeInternal#0;class#Insert#0" />
-            <element signature="method#merge#0;class#Insert#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -906,15 +584,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Day08/Test/Test1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+        <state relative-caret-position="544">
+          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Day08/Test/Insert.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="275" column="50" selection-start-line="275" selection-start-column="50" selection-end-line="275" selection-end-column="50" />
+        <state relative-caret-position="1581">
+          <caret line="387" column="5" lean-forward="true" selection-start-line="387" selection-start-column="5" selection-end-line="387" selection-end-column="5" />
           <folding>
             <element signature="method#bubbleSort#0;class#Insert#0" />
             <element signature="method#insertSort#0;class#Insert#0" />
@@ -924,13 +602,15 @@
             <element signature="method#selectionSort#0;class#Insert#0" />
             <element signature="method#generateArray#0;class#Insert#0" />
             <element signature="method#generateNearlySortArray#0;class#Insert#0" />
+            <element signature="method#quickSort#0;class#Insert#0" />
             <element signature="method#quickSort2#0;class#Insert#0" />
             <element signature="method#quickSort3#0;class#Insert#0" />
             <element signature="method#quickSortInternal#0;class#Insert#0" />
             <element signature="method#quickSortInternal2#0;class#Insert#0" />
             <element signature="method#quickSortInternal3#0;class#Insert#0" />
-            <element signature="method#partition2#0;class#Insert#0" />
+            <element signature="method#partition3#0;class#Insert#0" />
             <element signature="method#partition#0;class#Insert#0" />
+            <element signature="method#partition2#0;class#Insert#0" />
             <element signature="method#swap#0;class#Insert#0" />
             <element signature="method#mergeSort#0;class#Insert#0" />
             <element signature="method#mergeInternal#0;class#Insert#0" />

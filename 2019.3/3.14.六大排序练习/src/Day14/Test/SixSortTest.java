@@ -1,25 +1,25 @@
 package Day14.Test;
 
 public class SixSortTest {
-    /**
-     * 第一个冒泡排序；按照升序排列
-     * @param data 传入要排序的数组
-     */
-    public static void bubbleSort(int[] data){
-        int n = data.length;
-        if (n <= 1){
-            return;
-        }
-        for (int i = 0;i < n;i++){
-            for (int j = 0;j < n-1;j++){
-                if (data[j] > data[j+1]){
-                    int temp = data[j];
-                    data[j] = data[j+1];
-                    data[j+1] = temp;
+        /**
+         * 第一个冒泡排序；按照升序排列
+         * @param data 传入要排序的数组
+         */
+        public static void bubbleSort(int[] data){
+            int n = data.length;
+            if (n <= 1){
+                return;
+            }
+            for (int i = 0;i < n;i++){
+                for (int j = 0;j < n-1;j++){
+                    if (data[j] > data[j+1]){
+                        int temp = data[j];
+                        data[j] = data[j+1];
+                        data[j+1] = temp;
+                    }
                 }
             }
         }
-    }
 
     /**
      * 插入排序：一组无序的数组，假定分为有序区和无序区，
@@ -146,7 +146,7 @@ public class SixSortTest {
 
     /**
      * 选择排序，也分未排序空间和已排序空间
-     * 但是每次是将未排序空间最小的额元素放到已
+     * 但是每次是将未排序空间最小的元素放到已
      * 排序空间的最末尾，直到未排序空间元素个数为0；
      * @param data
      */
@@ -176,7 +176,6 @@ public class SixSortTest {
      * 输出排序后的数组；
      * @param data 要输出的数组；
      */
-
     public static void printArray(int[] data){
         for (int o:data) {
             System.out.print(o+" ");
