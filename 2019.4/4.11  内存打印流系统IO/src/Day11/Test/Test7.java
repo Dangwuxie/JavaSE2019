@@ -7,7 +7,7 @@ import java.io.InputStream;
 public class Test7 {
     public static void main(String[] args) throws IOException {
         InputStream in = System.in;
-        byte[] data = new byte[1024];
+        byte[] data = new byte[4];
         System.out.println("请输入信息");
         int temp = in.read(data);
         System.out.println("输出内容为："+new String(data,0,temp));
