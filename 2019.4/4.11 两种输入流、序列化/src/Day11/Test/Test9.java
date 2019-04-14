@@ -14,7 +14,7 @@ class Person9 implements Serializable{
     }
     @Override
     public String toString() {
-        return "Person [name = "+name+"age = "+age+"]";
+        return "Person [name = "+name+"    age = "+age+"]";
     }
 }
 public class Test9 {
