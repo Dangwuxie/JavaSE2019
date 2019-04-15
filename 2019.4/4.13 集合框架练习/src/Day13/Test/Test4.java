@@ -44,7 +44,7 @@ class Person4 implements Comparable<Person4>{
 }
 public class Test4 {
     public static void main(String[] args) {
-
+        Thread
         Set<Person4> set = new TreeSet<>();
         set.add(new Person4("六号",666));
         set.add(new Person4("七号",555));
