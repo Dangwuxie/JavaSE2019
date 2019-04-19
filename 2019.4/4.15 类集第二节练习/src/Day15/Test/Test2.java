@@ -1,6 +1,7 @@
 package Day15.Test;
 
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 class Person2{
@@ -42,6 +43,11 @@ class Person2{
     @Override
     public String toString() {
         return "{Name = "+name+"; Age = "+age+"}";
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(age,name);
     }
 }
 public class Test2 {
