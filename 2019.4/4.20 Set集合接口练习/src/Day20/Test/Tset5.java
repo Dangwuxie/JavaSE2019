@@ -61,9 +61,9 @@ public class Tset5 {
         set.add(new Person5("张三",20));
         set.add(new Person5("李四",30));
         System.out.println(set);*/
-        Set<Person5> set1 = new HashSet<>(new DascAgeComparator());
-        set1.add(new Person5("张三",33));
+        //Set<Person5> set1 = new HashSet<>(new AscAgeComparator());
+        /*set1.add(new Person5("张三",33));
         set1.add(new Person5("李四",44));
-        System.out.println(set1);
+        System.out.println(set1);*/
     }
 }

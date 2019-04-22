@@ -17,7 +17,6 @@ class Person implements Comparable<Person>{
     public String toString() {
         return "Person{ name = "+name+", age = "+age;
     }
-
     @Override
     public int compareTo(Person o) {
         if (this.age > o.age){
