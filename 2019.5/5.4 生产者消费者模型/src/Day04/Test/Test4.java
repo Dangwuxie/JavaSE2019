@@ -20,7 +20,8 @@ class Goods{
     }
     @Override
     public String toString() {
-        return "{GoodsName = " + goodsName +", count = " + count + "}";
+        return "{GoodsName = " + goodsName
+                +", count = " + count + "}";
     }
 }
 //生产者
@@ -57,12 +58,13 @@ public class Test4 {
         Thread produceThread = new Thread(new Producer(goods),"生产者线程");
         Thread consumerThread = new Thread(new Consumer(goods),"消费者线程");
         //启动生产者线程
-        consumerThread.start();
+
+        produceThread.start();
         try {
-            Thread.sleep(3000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        produceThread.start();
+        consumerThread.start();
     }
 }
