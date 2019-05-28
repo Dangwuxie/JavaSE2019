@@ -15,11 +15,11 @@ class Thread7A extends Thread{
     public void run() {
         try{
             synchronized (thread7B){
-                System.out.println("A线程开始:"
+                System.out.println("1.A线程开始:"
                         +Thread.currentThread().getName()
                         +"   "+System.currentTimeMillis());
-                Thread.sleep(1000);
-                System.out.println("A线程结束:"
+                Thread.sleep(100);
+                System.out.println("2.A线程结束:"
                         +Thread.currentThread().getName()
                         +"   "+System.currentTimeMillis());
             }
@@ -32,11 +32,11 @@ class Thread7B extends Thread{
     @Override
     public synchronized void run() {
         try{
-            System.out.println("B线程开始:"
+            System.out.println("3.B线程开始:"
                     +Thread.currentThread().getName()
                     +"   "+System.currentTimeMillis());
-            Thread.sleep(1000);
-            System.out.println("B线程结束:"
+            Thread.sleep(300);
+            System.out.println("4.B线程结束:"
                     +Thread.currentThread().getName()
                     +"   "+System.currentTimeMillis());
         }catch (InterruptedException e){
@@ -53,7 +53,7 @@ public class Test7 {
         thread7B.setName("B线程");
         thread7A.start();
         thread7B.start();
-        thread7B.join(500);
-        System.out.println("Main方法结束"+Thread.holdsLock(thread7B)+"   "+System.currentTimeMillis());
+        thread7B.join(100);
+        System.out.println("5.Main方法结束"+"   "+System.currentTimeMillis());
     }
 }
