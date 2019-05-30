@@ -1,7 +1,5 @@
 package Day20.Test;
 
-import java.io.InputStream;
-import java.io.OutputStream;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
