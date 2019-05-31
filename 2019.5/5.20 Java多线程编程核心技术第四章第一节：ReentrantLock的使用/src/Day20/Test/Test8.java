@@ -8,7 +8,6 @@ import java.util.concurrent.locks.ReentrantLock;
  */
 class MyService8{
     private ReentrantLock lock;
-
     public MyService8(boolean isFair) {
         lock = new ReentrantLock(isFair);
     }
@@ -20,7 +19,6 @@ class MyService8{
             lock.unlock();
         }
     }
-
 }
 
 public class Test8 {
