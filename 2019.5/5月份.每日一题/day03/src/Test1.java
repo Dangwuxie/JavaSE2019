@@ -1,5 +1,8 @@
 import java.util.EmptyStackException;
 import java.util.Stack;
+/**
+ * 这个是判断三种括号的解法；
+ */
 
 /**
  * /*char[] data = A.toCharArray();
