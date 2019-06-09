@@ -19,13 +19,7 @@
               <caret line="144" column="29" selection-start-line="144" selection-start-column="29" selection-end-line="144" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#338#339#0" expanded="true" />
-                <element signature="e#357#358#0" expanded="true" />
                 <element signature="method#Heap#2;class#Heap#0" />
-                <element signature="e#669#670#0" expanded="true" />
-                <element signature="e#696#697#0" expanded="true" />
-                <element signature="e#726#727#0" expanded="true" />
-                <element signature="e#758#759#0" expanded="true" />
                 <element signature="method#compare#0;class#Heap#0" />
                 <element signature="method#fatherIndex#0;class#Heap#0" />
               </folding>
@@ -83,6 +77,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -107,7 +102,6 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -184,18 +178,19 @@
       <workItem from="1559461042995" duration="9968000" />
       <workItem from="1559476496301" duration="45000" />
       <workItem from="1560045835180" duration="22591000" />
+      <workItem from="1560097911483" duration="92000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45413000" />
+    <option name="totallyTimeSpent" value="45505000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.34138486" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -222,6 +217,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.34138486" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,6 +232,26 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/heap/Heap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2448">
+          <caret line="144" column="29" selection-start-line="144" selection-start-column="29" selection-end-line="144" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Heap#2;class#Heap#0" />
+            <element signature="method#compare#0;class#Heap#0" />
+            <element signature="method#fatherIndex#0;class#Heap#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/heap/Test1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Day01/Test/BinSearchTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -245,16 +261,14 @@
             <element signature="method#add#1;class#BinSearchTree#0" />
             <element signature="method#contains#0;class#BinSearchTree#0" />
             <element signature="method#contains#1;class#BinSearchTree#0" />
-            <element signature="method#preOrder#1;class#BinSearchTree#0" />
+            <element signature="e#2027#2028#0" expanded="true" />
+            <element signature="e#2057#2058#0" expanded="true" />
             <element signature="method#generateTreeStruct#0;class#BinSearchTree#0" />
             <element signature="method#generateGang#0;class#BinSearchTree#0" />
             <element signature="method#inOrder#1;class#BinSearchTree#0" />
             <element signature="method#postOrder#1;class#BinSearchTree#0" />
-            <element signature="method#levelOrder#0;class#BinSearchTree#0" />
-            <element signature="e#4718#4719#0" expanded="true" />
-            <element signature="e#4762#4763#0" expanded="true" />
-            <element signature="e#4953#4954#0" expanded="true" />
-            <element signature="e#4997#4998#0" expanded="true" />
+            <element signature="e#5371#5372#0" expanded="true" />
+            <element signature="e#5409#5410#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -275,16 +289,14 @@
             <element signature="method#add#1;class#BinSearchTree#0" />
             <element signature="method#contains#0;class#BinSearchTree#0" />
             <element signature="method#contains#1;class#BinSearchTree#0" />
-            <element signature="method#preOrder#1;class#BinSearchTree#0" />
+            <element signature="e#2027#2028#0" expanded="true" />
+            <element signature="e#2057#2058#0" expanded="true" />
             <element signature="method#generateTreeStruct#0;class#BinSearchTree#0" />
             <element signature="method#generateGang#0;class#BinSearchTree#0" />
             <element signature="method#inOrder#1;class#BinSearchTree#0" />
             <element signature="method#postOrder#1;class#BinSearchTree#0" />
-            <element signature="method#levelOrder#0;class#BinSearchTree#0" />
-            <element signature="e#4718#4719#0" expanded="true" />
-            <element signature="e#4762#4763#0" expanded="true" />
-            <element signature="e#4953#4954#0" expanded="true" />
-            <element signature="e#4997#4998#0" expanded="true" />
+            <element signature="e#5371#5372#0" expanded="true" />
+            <element signature="e#5409#5410#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -305,16 +317,14 @@
             <element signature="method#add#1;class#BinSearchTree#0" />
             <element signature="method#contains#0;class#BinSearchTree#0" />
             <element signature="method#contains#1;class#BinSearchTree#0" />
-            <element signature="method#preOrder#1;class#BinSearchTree#0" />
+            <element signature="e#2027#2028#0" expanded="true" />
+            <element signature="e#2057#2058#0" expanded="true" />
             <element signature="method#generateTreeStruct#0;class#BinSearchTree#0" />
             <element signature="method#generateGang#0;class#BinSearchTree#0" />
             <element signature="method#inOrder#1;class#BinSearchTree#0" />
             <element signature="method#postOrder#1;class#BinSearchTree#0" />
-            <element signature="method#levelOrder#0;class#BinSearchTree#0" />
-            <element signature="e#4718#4719#0" expanded="true" />
-            <element signature="e#4762#4763#0" expanded="true" />
-            <element signature="e#4953#4954#0" expanded="true" />
-            <element signature="e#4997#4998#0" expanded="true" />
+            <element signature="e#5371#5372#0" expanded="true" />
+            <element signature="e#5409#5410#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -335,16 +345,14 @@
             <element signature="method#add#1;class#BinSearchTree#0" />
             <element signature="method#contains#0;class#BinSearchTree#0" />
             <element signature="method#contains#1;class#BinSearchTree#0" />
-            <element signature="method#preOrder#1;class#BinSearchTree#0" />
+            <element signature="e#2027#2028#0" expanded="true" />
+            <element signature="e#2057#2058#0" expanded="true" />
             <element signature="method#generateTreeStruct#0;class#BinSearchTree#0" />
             <element signature="method#generateGang#0;class#BinSearchTree#0" />
             <element signature="method#inOrder#1;class#BinSearchTree#0" />
             <element signature="method#postOrder#1;class#BinSearchTree#0" />
-            <element signature="method#levelOrder#0;class#BinSearchTree#0" />
-            <element signature="e#4718#4719#0" expanded="true" />
-            <element signature="e#4762#4763#0" expanded="true" />
-            <element signature="e#4953#4954#0" expanded="true" />
-            <element signature="e#4997#4998#0" expanded="true" />
+            <element signature="e#5371#5372#0" expanded="true" />
+            <element signature="e#5409#5410#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -421,13 +429,7 @@
           <caret line="144" column="29" selection-start-line="144" selection-start-column="29" selection-end-line="144" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#338#339#0" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
             <element signature="method#Heap#2;class#Heap#0" />
-            <element signature="e#669#670#0" expanded="true" />
-            <element signature="e#696#697#0" expanded="true" />
-            <element signature="e#726#727#0" expanded="true" />
-            <element signature="e#758#759#0" expanded="true" />
             <element signature="method#compare#0;class#Heap#0" />
             <element signature="method#fatherIndex#0;class#Heap#0" />
           </folding>
