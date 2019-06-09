@@ -65,6 +65,7 @@ public class BinSearchTree<E extends Comparable<E>>implements BinTree<E>{
             size++;
             return newNode;
         }
+        //如果树不为空：
         if (e.compareTo(node.data) < 0){
             node.left = add(node.left,e);
         }
@@ -73,39 +74,6 @@ public class BinSearchTree<E extends Comparable<E>>implements BinTree<E>{
         }
         return node;
     }
-
-    /**
-     * 定义一个递归函数
-     * 以指定的节点为根节点，插入指定元素e；
-     * @return
-     */
-    /*private void add(Node node,E e){
-        //首先判断当前的node的data根插入的值是重复元素
-        //就直接return
-        if (node.data.compareTo(e) == 0){
-            return;
-        }
-        else if(e.compareTo(node.data) < 0 && node.left == null){
-            Node newNode = new Node(e);
-            node.left = newNode;
-            size++;
-        }
-        else if(e.compareTo(node.data) > 0 && node.right == null){
-            Node newNode = new Node(e);
-            node.right = newNode;
-            size++;
-        }
-        else if (e.compareTo(node.data) < 0){
-            //继续递归寻找左子树最终的插入位置吧
-            add(node.left,e);
-        }
-        else if (e.compareTo(node.data) > 0){
-            //递归寻找右子树最终位置
-            add(node.right,e);
-        }
-    }*/
-
-
     @Override
     public int getSize() {
         return size;
@@ -163,7 +131,6 @@ public class BinSearchTree<E extends Comparable<E>>implements BinTree<E>{
         generateTreeStruct(root,0,res);
         return res.toString();
     }
-
     /**
      *
      * @param node 头节点
@@ -253,61 +220,84 @@ public class BinSearchTree<E extends Comparable<E>>implements BinTree<E>{
 
     @Override
     public E removeMin() {
-        return  null;
+        E result = getMin();
+
+        root =  removeMinNode(root);
+        return result;
     }
 
+    /**
+     * 删除传入二叉树的最小值节点
+     * 返回删除后的二叉树的根节点
+     * @param node
+     * @return
+     */
+    private Node removeMinNode(Node node){
+        //首先找到要删除的节点
+        if (node.left == null){
+            Node rightNode = node.right;
+            node.right = null;
+            size--;
+            return rightNode;
+        }
+        //如果左子树不为空，还得继续往左走；
+        // 直到找到最小值点然后删除
+        node.left = removeMinNode(node.left);
+        return node;
+    }
     @Override
     public E removeMax() {
-        return null;
-    }
-
-    public Node remove(Node node,E e){
-        if (node == null){
-            return null;
-        }
-        if (e.compareTo(node.data) < 0){
-            node.left = remove(node.left,e);
-        }
-        return node;
+        E result = getMax();
+        root =  removeMaxNode(root);
+        return result;
     }
     public Node removeMaxNode(Node node){
         if (node.right == null){
             Node leftNode = node.left;
             node.left = null;
-
+            size--;
+            return leftNode;
         }
+        node.right = removeMaxNode(node.right);
+        return node;
+    }
+    public void remove(E e){
+        root = remove1(root,e);
+    }
+    private Node remove1(Node node,E e){
+        if (node == null){
+            return null;
+        }
+        if (e.compareTo(node.data) < 0){
+            node.left = remove1(node.left,e);
+        }
+        if (e.compareTo(node.data) > 0){
+            node.right = remove1(node.right,e);
+        }
+        if (e.compareTo(node.data) == 0){
+            if (node.left != null && node.right == null){
+                Node leftNode = node.left;
+                size--;
+                node.left = null;
+                return leftNode;
+            }
+            if (node.right != null && node.left == null){
+                Node rightNode = node.right;
+                size--;
+                node.right = null;
+                return rightNode;
+            }
+            if (node.left != null && node.right != null){
+                //找到前驱节点或者后继节点
+                Node succeror = getMinNode(node.right);
+                succeror.left = node.left;
+                succeror.right = removeMinNode(node.right);
+                node.left = node.right = null;
+                return succeror;
+            }
+        }
+
         return node;
     }
 
-    public static void main(String[] args) {
-        BinTree<Integer> binTree = new BinSearchTree<>();
-        int[] num = new int[]{28,16,13,22,30,29,42};
-        for (int i = 0;i < num.length;i++){
-            binTree.add(num[i]);
-        }
-        //binTree.preOrder();
-        //System.out.println();
-        System.out.println(binTree);
-    }
-
 }
-/*
-    运行结果：
-
-    28
-    --16
-    ----13
-    null
-    null
-    ----22
-    null
-    null
-    --30
-    ----29
-    null
-    null
-    ----42
-    null
-    null
-
- */
