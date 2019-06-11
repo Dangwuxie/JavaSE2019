@@ -44,6 +44,30 @@ public class ArrayQueue<E> implements Queue<E> {
         elementData[tail++] = e;
     }
 
+    /**
+     * 如果不停的出对入队，那么head指针就会不同往后移动，当tail移动到最右边时
+     * 队列的前面却空出了很多，可是也无法往队列中添加数据了
+     * 此时我们可以这样，当tail=capacity时，先判断head是否为0，
+     * 如果为0，那么队列已满，否则触发一次数据的整体搬移，从head-tail之间的元素
+     * 搬到0-(tail-head)的位置；
+     *
+     * @param e
+     */
+    public void enqueue2(E e){
+        if (tail == capacity){
+            if (head == 0){
+                throw new ArrayIndexOutOfBoundsException("队列已经满了");
+            }else {
+                //否则发生一次数据搬移
+                for (int i = head;i < tail;i++){
+                    elementData[i-head] = elementData[i];
+                }
+                //搬移完毕之后更新两个指针位置
+                tail -= head;
+                head = 0;
+            }
+        }
+    }
     @Override
     public E dequeue() {
         if (head == tail){
