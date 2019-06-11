@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.EmptyStackException;
 
 /**
@@ -30,6 +31,21 @@ public class ArrayStack<E> {
         return true;
     }
 
+    public void push1(int value){
+        if (count == n){
+            int oldCount = n;
+            int newCount = oldCount << 1;
+            //如果栈的大小以及超过int的最大值
+            if (((newCount+8) - Integer.MAX_VALUE) > 0){
+                throw new OutOfMemoryError("超出可存储最大值！");
+            }
+            //数组扩容
+            n = newCount;
+            items = Arrays.copyOf(items,newCount);
+        }
+        //然后存入元素
+        items[count++] = value;
+    }
     //出栈操作
     public int pop(){
         //若是栈为空。此时返回null;

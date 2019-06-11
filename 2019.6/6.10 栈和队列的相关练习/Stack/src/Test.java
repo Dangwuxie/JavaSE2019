@@ -9,13 +9,8 @@
  */
 public class Test {
     public static void main(String[] args) {
-        ArrayStack stack = new ArrayStack(10);
-        for (int i = 0;i < 10;i++){
-            stack.push(i+1);
-        }
+        ArrayStack stack = new ArrayStack(5);
+        System.out.println(stack.pop());
 
-        for (int i = 0;i < 10;i++){
-            System.out.print(stack.pop()+" ");
-        }
     }
 }
