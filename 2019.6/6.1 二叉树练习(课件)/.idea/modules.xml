@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/6.1 二叉树练习(课件).iml" filepath="$PROJECT_DIR$/6.1 二叉树练习(课件).iml" />
+      <module fileurl="file://$PROJECT_DIR$/binaryTree/binaryTree.iml" filepath="$PROJECT_DIR$/binaryTree/binaryTree.iml" />
     </modules>
   </component>
 </project>
