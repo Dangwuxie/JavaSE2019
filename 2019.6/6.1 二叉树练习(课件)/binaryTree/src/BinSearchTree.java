@@ -126,9 +126,9 @@ public class BinSearchTree<E extends Comparable> implements BinTree<E> {
         if (root == null){
             return;
         }
-        preOrder(root.leftChild);
+        inOrder(root.leftChild);
         System.out.print(root.data+" ");
-        preOrder(root.rightChild);
+        inOrder(root.rightChild);
     }
     /**
      * 后序遍历
@@ -141,8 +141,8 @@ public class BinSearchTree<E extends Comparable> implements BinTree<E> {
         if (root == null){
             return;
         }
-        preOrder(root.leftChild);
-        preOrder(root.rightChild);
+        postOrder(root.leftChild);
+        postOrder(root.rightChild);
         System.out.print(root.data+" ");
     }
     /**
