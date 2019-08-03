@@ -10,7 +10,13 @@ import java.io.IOException;
  */
 public class Test2 {
     public static void main(String[] args) {
-        File file2 = new File("C:\\Users\\dangwuxie\\Desktop\\DXC\\730.txt");
+        /*File file2 = new File("C:\\Users\\dangwuxie\\Desktop\\DXC\\730.txt");*/
+        File file2 = new File("C:"+File.separator+
+                "Users"+File.separator+
+                "dangwuxie"+File.separator+
+                "Desktop"+File.separator+
+                "DXC"+File.separator+
+                "730.txt");
         if (!file2.exists()){
             try {
                 file2.createNewFile();
