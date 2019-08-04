@@ -86,14 +86,14 @@ public class JdbcTest7 {
             }
             if (stmt!=null){
                 try {
-                    rs.close();
+                    stmt.close();
                 } catch (SQLException e) {
                     e.printStackTrace();
                 }
             }
             if (conn7!=null){
                 try {
-                    rs.close();
+                    conn7.close();
                 } catch (SQLException e) {
                     e.printStackTrace();
                 }
