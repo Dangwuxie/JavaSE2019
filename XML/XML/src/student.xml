@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+ <students  >
+		<student number="adang_0001">
+	<name id="010">张三</name>
+	<age>232</age>
+	<sex>male</sex>
+</student>
+	<student  number="adang_0002">
+		<name id="020">黑人</name>
+		<age>22</age>
+		<sex>female</sex>
+	</student>
+ </students>
