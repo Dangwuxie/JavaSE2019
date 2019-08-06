@@ -11,17 +11,17 @@ public class Test4 {
     public static void main(String[] args) throws IOException {
         //OutputStream ops = new FileOutputStream();
 
-        InputStream is = new FileInputStream(
+        InputStream in = new FileInputStream(
                 new File("C:\\Users\\dangwuxie\\Desktop\\DXC\\730.txt"));
-        byte[] data = new byte[8];
+        byte[] data = new byte[1];
 
         /*for (int i = 0;i < 4;i++){
-            System.out.println(is.read(data));
+            System.out.println(in.read(data));
         }*/
-        int len = is.read(data,1,5);
+        //int len = in.read(data,1,5);
 
-        System.out.println(new String(data));
-
-        is.close();
+        //System.out.println(new String(data));
+        System.out.println(in.available());
+        in.close();
     }
 }

@@ -17,32 +17,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Servlet_Test1.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/day6_serclet/src/bit/com/it/servlet/Servlet_Test1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#419#420#0" expanded="true" />
-                <element signature="e#446#447#0" expanded="true" />
-                <element signature="e#647#648#0" expanded="true" />
-                <element signature="e#674#675#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day6_serclet/web/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebServlet.class" pinned="false" current-in-tab="false">
+      <file leaf-file-name="WebServlet.class" pinned="false" current-in-tab="true">
         <entry file="jar://D:/apache-tomcat-8.5.31/lib/servlet-api.jar!/javax/servlet/annotation/WebServlet.class">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -87,7 +62,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="351" />
     <option name="y" value="87" />
     <option name="width" value="1164" />
@@ -104,57 +79,6 @@
             <path>
               <item name="Tomcat" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tomcat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="day6_serclet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="day6_serclet" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="day6_serclet" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="bit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="day6_serclet" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="bit" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="day6_serclet" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="bit" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="it" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="day6_serclet" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="bit" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="it" type="462c0819:PsiDirectoryNode" />
-              <item name="servlet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="day6_serclet" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -373,15 +297,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1565075655847</updated>
-      <workItem from="1565075660806" duration="5571000" />
+      <workItem from="1565075660806" duration="6175000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5571000" />
+    <option name="totallyTimeSpent" value="6175000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="735" extended-state="7" />
+    <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
@@ -403,7 +328,7 @@
       <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.58038586" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.58038586" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24980484" />
       <window_info id="Web" side_tool="true" />
@@ -482,13 +407,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/apache-tomcat-8.5.31/lib/servlet-api.jar!/javax/servlet/annotation/WebServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/day6_serclet/src/bit/com/it/servlet/Servlet_Test1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="99">
@@ -500,6 +418,13 @@
             <element signature="e#647#648#0" expanded="true" />
             <element signature="e#674#675#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/apache-tomcat-8.5.31/lib/servlet-api.jar!/javax/servlet/annotation/WebServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>

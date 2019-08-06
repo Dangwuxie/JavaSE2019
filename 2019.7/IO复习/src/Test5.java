@@ -10,12 +10,12 @@ import java.io.*;
  */
 public class Test5 {
     public static void main(String[] args) throws IOException {
-        /*Writer writer = new FileWriter(
+        Writer writer = new FileWriter(
                 new File("C:\\Users\\dangwuxie\\Desktop\\DXC\\730.txt"));
 
         String msg = "今天使星期一";
         writer.write(msg);
-        writer.close();*/
+        writer.close();
 
         Reader reader = new FileReader(
                 new File("C:\\Users\\dangwuxie\\Desktop\\DXC\\730.txt"));

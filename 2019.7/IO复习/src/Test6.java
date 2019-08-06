@@ -10,10 +10,10 @@ import java.io.*;
 public class Test6 {
     public static void main(String[] args) throws IOException {
         File file = new File("C:\\Users\\dangwuxie\\Desktop\\DXC\\730.txt");
-       /* OutputStream output = new FileOutputStream(file,true);
+        OutputStream output = new FileOutputStream(file,true);
         Writer out = new OutputStreamWriter(output);
         out.write("你好呀");
-        out.close();*/
+        out.close();
 
        InputStream input = new FileInputStream(file);
        Reader in = new InputStreamReader(input);
