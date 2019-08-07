@@ -1,3 +1,5 @@
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.Scanner;
 
 /**
@@ -9,6 +11,8 @@ import java.util.Scanner;
  */
 public class Test11 {
     public static void main(String[] args) {
-        Scanner
-    }
+        Scanner scanner = new Scanner(System.in);
+        System.out.println(scanner.next());
+
+}
 }
