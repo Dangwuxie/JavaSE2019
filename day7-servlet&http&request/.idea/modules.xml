@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/day7-servlet&amp;http&amp;request/day7-servlet&amp;http&amp;request.iml" filepath="$PROJECT_DIR$/day7-servlet&amp;http&amp;request/day7-servlet&amp;http&amp;request.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day7_testRegist/day7_testRegist.iml" filepath="$PROJECT_DIR$/day7_testRegist/day7_testRegist.iml" />
     </modules>
   </component>
 </project>

@@ -14,26 +14,18 @@ import java.io.IOException;
  * @Description: TODO
  * @date 2019/8/8 0:12
  */
-@WebServlet("/Request_Test4")
-public class Request_Test4 extends HttpServlet {
+@WebServlet("/Request_Test8")
+public class Request_Test8 extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        System.out.println("888888888888被访问了");
 
+        //获取request域中的数据
+        Object obj = request.getAttribute("msg");
+        System.out.println(obj);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        //获取请求头数据：referer,告诉浏览器我从那里来，请求数据从哪里来
-        String referer = request.getHeader("referer");
-        System.out.println(referer);//http://localhost/day7/login.html
-
-        //防盗链
-        if (referer != null){
-            if (referer.contains("/day7")){
-                System.out.println("正常播放---------------");
-            }else {
-                //盗链
-                System.out.println("看电影来腾讯视频！！");
-            }
-        }
-
+        this.doPost(request,response);
     }
 }
+

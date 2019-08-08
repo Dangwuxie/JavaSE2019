@@ -5,6 +5,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.BufferedReader;
 import java.io.IOException;
 
 /**
@@ -14,26 +15,18 @@ import java.io.IOException;
  * @Description: TODO
  * @date 2019/8/8 0:12
  */
-@WebServlet("/Request_Test4")
-public class Request_Test4 extends HttpServlet {
+@WebServlet("/Request_Test5")
+public class Request_Test5 extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        //获取请求消息体
+        BufferedReader br = request.getReader();
+        String str = null;
+        while ((str = br.readLine())!=null){
+            System.out.println(str);
+        }
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        //获取请求头数据：referer,告诉浏览器我从那里来，请求数据从哪里来
-        String referer = request.getHeader("referer");
-        System.out.println(referer);//http://localhost/day7/login.html
-
-        //防盗链
-        if (referer != null){
-            if (referer.contains("/day7")){
-                System.out.println("正常播放---------------");
-            }else {
-                //盗链
-                System.out.println("看电影来腾讯视频！！");
-            }
-        }
 
     }
 }
