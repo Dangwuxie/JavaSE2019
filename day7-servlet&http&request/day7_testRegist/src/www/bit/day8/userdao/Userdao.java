@@ -14,10 +14,8 @@ import www.bit.day8.registTest.User;
  * @date 2019/8/8 15:22
  */
 public class Userdao {
-    //生命一个成员变量JDBCTemplate公用
+    //声明一个成员变量JDBCTemplate公用
     private JdbcTemplate template = new JdbcTemplate(JDBCutils.getDataSource());
-
-
     /**
      *
      * @param loginUser 只有用户名和密码
@@ -26,12 +24,11 @@ public class Userdao {
     public User login(User loginUser){
         try {
             //编写sql
-            String sql = "select * from user where name=? and password=?";
+            String sql = "select * from user where username=? and password=?";
             //调用jquery方法
             User user = template.queryForObject(
-                    sql,new BeanPropertyRowMapper<User>(User.class),
+                    sql,new BeanPropertyRowMapper<>(User.class),
                     loginUser.getUsername(),loginUser.getPassword());
-
             return user;
         } catch (DataAccessException e) {
             e.printStackTrace();
