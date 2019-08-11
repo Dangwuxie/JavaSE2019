@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        /*
+        * 分析
+        * 需求：点击超链接需要换一张
+        * 1、给超链接和图片绑定单击事件
+        * 2、重新设置图片的src属性值
+        *
+        * */
+        window.onload = function () {
+            //获取图片对象
+            var img =  document.getElementById("checkCode");
+
+            //绑定单击事件
+            img.onclick = function () {
+                //设置img的src属性
+                //加时间戳，防止本地缓存，一致请求本地缓存的图片
+                var datatime = new Date().getTime();
+                img.src = "/CheckCodeServlet?"+datatime;
+            }
+
+            var texts = document.getElementById("change");
+
+            texts.onclick = function () {
+                var datatime = new Date().getTime();
+                img.src = "/CheckCodeServlet?"+datatime;
+            }
+
+        }
+
+    </script>
+</head>
+<body>
+
+    <img id="checkCode" src="/CheckCodeServlet"/>
+    <a id="change" href="#" >看不清？点击换一张</a>
+
+</body>
+</html>
