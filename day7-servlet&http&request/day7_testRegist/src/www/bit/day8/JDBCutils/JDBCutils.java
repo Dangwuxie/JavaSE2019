@@ -27,7 +27,6 @@ public class JDBCutils {
             //使用class来加载配置文件获取字节输入流
             InputStream in = JDBCutils.class.getClassLoader().getResourceAsStream("druid.properties");
             pro.load(in);
-
             //初始化连接池对象
             ds = DruidDataSourceFactory.createDataSource(pro);
 
