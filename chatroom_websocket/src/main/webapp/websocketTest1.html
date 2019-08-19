@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>websocketTest1</title>
+</head>
+<body>
+   <h2> 输入要发送的消息：</h2>
+<input type="text" id="text">
+<button onclick="sendMsg2Server()">发送信息</button>
+<hr>
+    <h2>收到的服务端消息为：</h2>
+<div id="read_from_server"></div>
+<hr>
+<button onclick="closeWebSocket()">关闭websocket</button>
+
+<!--具体实现-->
+<script>
+    var websocket = null;
+    if ('WebSocket' in window) {
+        alert("支持websocket")
+        /*传递后台的地址,协议名ws开头*/
+        websocket = new WebSocket("ws://localhost:8080/websocket");
+    }else {
+        alert("浏览器不支持websocket");
+    }
+    /*表示浏览器收到服务器信息，就会调用这个方法*/
+    websocket.onmessage = function (event) {
+        var msg = event.data;
+        flushDiv(msg);
+    };
+    /*浏览器与服务端建立连接后回调方法*/
+    websocket.onopen = function () {
+        alert("连接成功！")
+    };
+    /*建立websocket连接失败*/
+    websocket.onerror = function () {
+        alert("连接失败！")
+    };
+    /*客户端socket关闭*/
+    websocket.onclose = function () {
+        closeWebSocket();
+    };
+
+    /*定义一个方法把浏览器信息发送到服务器端*/
+    function sendMsg2Server() {
+        /*获取输入的信息*/
+        var msg = document.getElementById("text").value;
+        /*下面把这个信息发送出去*/
+        websocket.send(msg);
+    }
+    /*还需要把收到的信息动态替换到服务端信息的窗口*/
+    function flushDiv(msg) {
+        document.getElementById("read_from_server").innerText = msg;
+    }
+
+    /*关闭当前的websocket*/
+    function closeWebSocket() {
+        websocket.close();
+    }
+    /*当没有点击退出按钮而是直接关闭网页的时候，回调closeWebSocket函数*/
+    window.onbeforeunload = function () {
+        closeWebSocket();
+    }
+</script>
+</body>
+</html>
