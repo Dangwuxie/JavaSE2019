@@ -3,39 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <title>sign-up</title>
+    <!--<link rel="stylesheet" href="assets/css/common_form.css">-->
     <link rel="stylesheet" href="assets/css/common_form.css">
+    <script>
+        /*
+        * 分析
+        * 需求：点击超链接需要换一张
+        * 1、给超链接和图片绑定单击事件
+        * 2、重新设置图片的src属性值
+        *
+        * */
+        window.onload = function () {
+            //获取图片对象
+            var img =  document.getElementById("checkCode");
+            //绑定单击事件
+            img.onclick = function () {
+                //设置img的src属性
+                //加时间戳，防止本地缓存，一致请求本地缓存的图片
+                var datatime = new Date().getTime();
+                img.src = "/CheckCodeServlet?"+datatime;
+            };
+            var texts = document.getElementById("change");
+
+            texts.onclick = function () {
+                var datatime = new Date().getTime();
+                img.src = "/CheckCodeServlet?"+datatime;
+            }
+        }
+    </script>
 </head>
 <body>
-    <header>
+    <!--<header>
         <div class="header-line"></div>
-    </header>
-    <div class="content">
-        <img class="content-logo" src="assets/img/robot.jpg" alt="logo">
-        <h1 class="content-title">创建账户</h1>
-        <div class="content-form">
-            <form method="post" action="/doRegister" onsubmit="return submitTest()">
-                <div id="change_margin_1">
-                    <input class="username" type="text" name="username" placeholder="请输入用户名" onblur="oBlur_1()" onfocus="oFocus_1()">
-                </div>
-                <!-- input的value为空时弹出提醒 -->
-                <p id="remind_1"></p>
-                <div id="change_margin_2">
-                    <input class="password" type="password" name="password" placeholder="请输入密码" onblur="oBlur_2()" onfocus="oFocus_2()">
-                </div>
-                <!-- input的value为空时弹出提醒 -->
-                <p id="remind_2"></p>
-                <div id="change_margin_3">
-                    <input class="content-form-signup" type="submit" value="创建账户">
-                </div>
-            </form>
+    </header>-->
+    <div style="background:url(assets/img/s1.jpg);background-size: cover;background-position: center">
+        <div class="content">
+            <img class="content-logo" src="assets/img/QQ.jpg" alt="logo">
+            <h1 class="content-title">创建账户</h1>
+            <div class="content-form">
+                <form method="post" action="/doRegister" onsubmit="return submitTest()">
+                    <div id="change_margin_1">
+                        <input class="username" type="text" name="username" placeholder="请输入用户名" onblur="oBlur_1()" onfocus="oFocus_1()">
+                    </div>
+
+                    <!-- input的value为空时弹出提醒 -->
+                    <p id="remind_1"></p>
+
+                    <div >
+                        <input class="password" type="password" name="password" placeholder="请输入密码" onblur="oBlur_2()" onfocus="oFocus_2()">
+                    </div>
+                    <!-- input的value为空时弹出提醒 -->
+                    <p id="remind_2"></p>
+
+                    <!--验证码部分-->
+                    <div id="change_margin_2">
+                        <input class="checkbox" type="text" name="checkCode" placeholder="请输入验证码" onblur="oBlur_2()" onfocus="oFocus_2()">
+                    </div>
+                    <div>
+                        <img class="img" id="checkCode" src="/CheckCodeServlet"/>
+                        <a id="change" href="#" >看不清？点击换一张</a>
+                    </div>
+                    <p id="remind_3"></p>
+                    <div id="change_margin_3">
+                        <input class="content-form-signup" type="submit" value="创建账户">
+                    </div>
+
+                </form>
+            </div>
+            <div class="content-login-description">已经拥有账户？</div>
+            <div><a class="content-login-link" href="/index.html">登录</a></div>
+
+    </div>
+        <div style="height: 60px; width: 200px;margin: auto;margin-top: 40px;" >
+            <li><a href="#" target="_blank"><span style="color: dodgerblue; font-size: 18px;">MyBlog ，欢迎骚扰！</span></a></li>
+            <li><a href="#" target="_blank"><span style="color: dodgerblue; font-size: 18px;">Github ，欢迎骚扰！</span></a></li>
         </div>
-        <div class="content-login-description">已经拥有账户？</div>
-        <div><a class="content-login-link" href="/index.html">登录</a></div>
     </div>
-    <div style="height: 60px; width: 200px;margin: auto;margin-top: 40px;" >
-        <li><a href="#" target="_blank"><span style="color: dodgerblue; font-size: 18px;">MyBlog,欢迎骚扰！</span></a></li>
-        <li><a href="#" target="_blank"><span style="color: dodgerblue; font-size: 18px;">Github,欢迎骚扰！</span></a></li>
-    </div>
+
 <script src="assets/js/common_form_test.js"></script>
 
 </body>

@@ -48,13 +48,16 @@ public class LoginController extends HttpServlet {
                     "    </script>");
             /*登陆成功跳转页面到聊天页面并且需要把用户名字传到聊天页面，
             * 这样的话在座的各位都知道是谁上线了；
-            * 此时后台需要加载chat页面，
+            * 此时后台需要加载chat页面，这个页面是前端的一些东西，我们不用管
+            * 只需要如何使用就行。
             * */
             //首先加载一下chat.ftl
             Template template = getTemplate(req,"/chat.ftl");
             Map<String,String> map = new HashMap<>();
             map.put("username",username);
             try {
+                //通过template对象把保存进去的username这个项传到聊天页面上去，
+                //这样我们就可以直到是谁登陆进入聊天室了
                 template.process(map,out);
             } catch (TemplateException e) {
                 e.printStackTrace();

@@ -1,5 +1,8 @@
 package chatroom.utils;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
 import java.io.FileReader;
 import java.io.IOException;
 import java.sql.*;
@@ -17,6 +20,7 @@ public class CommUtils {
     private static String user;
     private static String password;
     private static String driver;
+    private static final Gson gson = new GsonBuilder().create();
     static{
         //读取资源文件，获取值
         Properties pro = new Properties();
@@ -72,6 +76,13 @@ public class CommUtils {
             }
         }
         close(stmt,conn);
+    }
+    public static String object2Json(Object obj) {
+        return gson.toJson(obj);
+    }
+
+    public static Object json2Object(String jsonStr,Class objClass) {
+        return gson.fromJson(jsonStr,objClass);
     }
     public static boolean strIsNull(String str){
         return str == null || str.equals("");

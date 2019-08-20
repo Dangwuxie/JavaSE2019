@@ -1,4 +1,4 @@
-package www.bit.day8.Response;
+package chatroom.service;
 
 import javax.imageio.ImageIO;
 import javax.servlet.ServletException;
@@ -13,14 +13,15 @@ import java.util.Random;
 
 /**
  * @author Dangxuchao
- * @Title: ${NAME}
- * @ProjectName day8_Response
+ * @Title: CheckCodeServlet
+ * @ProjectName chatroom_websocket
  * @Description: TODO
- * @date 2019/8/9 12:07
+ * @date 2019/8/20 13:09
  */
 @WebServlet("/CheckCodeServlet")
 public class CheckCodeServlet extends HttpServlet {
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //1、创建一个对象，这个对象可以在内存中画图，将来就代表验证码的图片对象；
         int width = 150;
         int height = 75;
@@ -62,11 +63,11 @@ public class CheckCodeServlet extends HttpServlet {
         }
 
         //将图片输出到页面展示
-        ImageIO.write(image,"jpg",response.getOutputStream());
-
+        ImageIO.write(image,"jpg",resp.getOutputStream());
     }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        doPost(request,response);
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        this.doGet(req, resp);
     }
 }

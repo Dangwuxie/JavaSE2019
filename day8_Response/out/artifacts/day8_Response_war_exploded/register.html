@@ -25,8 +25,9 @@
 
             var texts = document.getElementById("change");
 
-            texts.onclick = function (img.onclick) {
-                
+            texts.onclick = function () {
+                var datatime = new Date().getTime();
+                img.src = "/CheckCodeServlet?"+datatime;
             }
 
         }
