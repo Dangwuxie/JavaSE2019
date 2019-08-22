@@ -22,5 +22,4 @@ public @interface CommandMate {
     String group();//入口命令
 
 
-
 }

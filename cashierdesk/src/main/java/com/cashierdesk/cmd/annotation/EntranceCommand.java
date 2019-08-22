@@ -1,5 +1,10 @@
 package com.cashierdesk.cmd.annotation;
 
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
 /**
  * @author 灵魂编程者
  * @Title: EntranceCommand
@@ -8,7 +13,8 @@ package com.cashierdesk.cmd.annotation;
  * @date 2019/8/21 14:41
  */
 
-
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.TYPE)
 public @interface EntranceCommand {
 
 }

@@ -56,7 +56,6 @@ public class HelpCommand extends AbstractCommand {
         System.out.println("**************"+title+"**************");
 
         Map<String,List<String>> helpInfo = new HashMap<>();
-
         //遍历它的命令
         for (Command command:collection){
             CommandMate commandMate =
@@ -73,20 +72,21 @@ public class HelpCommand extends AbstractCommand {
             //不为空直接add就行
             func.add(commandMate.desc()+"("+commandMate.name()+")");
             //取出键值对的集合
-            int i = 0;
-            for (Map.Entry<String,List<String>> entry : helpInfo.entrySet()){
 
-                i++;
-                System.out.println(i+"."+entry.getKey());
-
-                int j = 0;
-                for (String item:entry.getValue()){
-                    j++;
-                    System.out.println("\t"+(i)+"."+(j)+" "+item);
-                }
-            }
-            System.out.println("输入菜单括号后面的编号(忽略大小写)，进行下一步操作");
-            System.out.println("*********************************************");
         }
+        int i = 0;
+        for (Map.Entry<String,List<String>> entry : helpInfo.entrySet()){
+
+            i++;
+            System.out.println(i+"."+entry.getKey());
+
+            int j = 0;
+            for (String item:entry.getValue()){
+                j++;
+                System.out.println("\t"+(i)+"."+(j)+" "+item);
+            }
+        }
+        System.out.println("输入菜单括号后面的编号(忽略大小写)，进行下一步操作");
+        System.out.println("*********************************************");
     }
 }

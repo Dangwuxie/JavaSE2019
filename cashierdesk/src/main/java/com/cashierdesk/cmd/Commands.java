@@ -70,6 +70,7 @@ public class Commands {
                 new OrderBrowseCommand(),
                 new OrderPayCommand()
 
+
         );
         //遍历命令集合，然后看他是什么注解，
         for (Command command:COMMANDS){
@@ -89,10 +90,13 @@ public class Commands {
                     cls.getDeclaredAnnotation(CommandMate.class);
 
             //利用反射将所有的command命令信息放到map表里面
-            if (commandMate != null){
+            /*if (commandMate != null){
+                System.out.println(commandMate.name());
                 continue;
-            }
+            }*/
             String commandKey = commandMate.name();
+
+
             if (adminCommand != null){
                 ADMIN_COMMANDS.put(commandKey,command);
             }
@@ -113,7 +117,8 @@ public class Commands {
     public static Command getCustomerCommand(String commandKey){
         //遍历map，返回就行
         return getCommand(commandKey,CUSTOMER_COMMANDS);
-    }public static Command getEntranceCommand(String commandKey){
+    }
+    public static Command getEntranceCommand(String commandKey){
         //遍历map，返回就行
         return getCommand(commandKey,ENTRANCE_COMMANDS);
     }
@@ -126,6 +131,7 @@ public class Commands {
         //遍历响应的Map，根据commandKey得到对应的value值
         //getOrDefault的意思就是说，找不到的话就返回一个缓存好的命令
         //CACHED_HELP_COMMANDS就是默认命令，帮助命令
+
         return commandMap.getOrDefault(commandKey,CACHED_HELP_COMMANDS);
 
     }
