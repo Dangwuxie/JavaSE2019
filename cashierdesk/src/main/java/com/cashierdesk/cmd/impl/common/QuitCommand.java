@@ -26,6 +26,9 @@ import com.cashierdesk.cmd.impl.AbstractCommand;
 public class QuitCommand extends AbstractCommand {
     @Override
     public void execute(Subject subject) {
-        super.execute(subject);
+        System.out.println("退出系统，欢迎下次使用！");
+        this.scanner.close();
+        //exit(int status)   终止当前正在运行的 Java 虚拟机。
+        System.exit(0);
     }
 }

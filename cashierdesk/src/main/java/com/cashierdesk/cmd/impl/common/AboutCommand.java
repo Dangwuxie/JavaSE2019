@@ -26,6 +26,9 @@ import com.cashierdesk.cmd.impl.AbstractCommand;
 public class AboutCommand extends AbstractCommand {
     @Override
     public void execute(Subject subject) {
-        super.execute(subject);
+        System.out.println("*****基于字符界面的购物车交付系统*******");
+        System.out.println("************作者：灵魂编程者***********");
+        System.out.println("**********时间：2019-08-05************");
+        System.out.println("**************************************");
     }
 }

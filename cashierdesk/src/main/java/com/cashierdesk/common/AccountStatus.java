@@ -22,7 +22,7 @@ public enum AccountStatus {
         this.desc = desc;
     }
 
-    public AccountStatus valueOf(int flg){
+    public static AccountStatus valueOf(int flg){
         for (AccountStatus accountStatus:values()){
             if (accountStatus.flg == flg){
                 return accountStatus;

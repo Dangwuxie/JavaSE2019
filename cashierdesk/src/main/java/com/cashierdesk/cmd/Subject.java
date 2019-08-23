@@ -10,7 +10,11 @@ import com.cashierdesk.entity.Account;
  * @date 2019/8/21 14:22
  */
 public class Subject {
-
+    /*
+    * 观察对象
+    * account，账户，当用户登陆成功之后设置account
+    * */
+    //new一个Account对象，这个对象存储了登陆账户的信息
     private Account account ;
 
     public void setAccount(Account account) {

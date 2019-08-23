@@ -2,6 +2,7 @@ package com.cashierdesk.cmd.impl;
 
 import com.cashierdesk.cmd.Command;
 import com.cashierdesk.cmd.Subject;
+import com.cashierdesk.service.AccountService;
 
 /**
  * @author 灵魂编程者
@@ -14,8 +15,12 @@ public class AbstractCommand implements Command {
 
     @Override
     public void execute(Subject subject) {
-
+        //启动所有服务,
     }
-    //启动所有服务,
+
+    public AccountService accountService;
+    public AbstractCommand(){
+        this.accountService = new AccountService();
+    }
 
 }

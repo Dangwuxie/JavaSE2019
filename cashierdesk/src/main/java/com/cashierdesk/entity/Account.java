@@ -10,7 +10,9 @@ import lombok.Data;
  * --------------皇图霸业谈笑中，不胜编程一场醉。
  * @date 2019/8/21 13:04
  */
-
+/*
+* 账户信息，存储登陆的账户一些信息
+* */
 @Data
 public class Account {
     private Integer id;

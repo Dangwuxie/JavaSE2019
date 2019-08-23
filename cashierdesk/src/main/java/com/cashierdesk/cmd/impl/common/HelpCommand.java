@@ -34,14 +34,17 @@ public class HelpCommand extends AbstractCommand {
         System.out.println("helpCommand");
         Account account = subject.getAccount();
         if (account == null){
-            //如果是空
+            //如果是用户名为空
             entranceHelp();
         }else{
             //如果不为空，那么就要判断是什么情况的命令了
             switch (account.getAccountType()){
+                //账户不同时展示的命令界面
                 case CUSTOMER:
+
                     break;
                 case ADMIN:
+
                     break;
                     default:
             }
@@ -51,6 +54,14 @@ public class HelpCommand extends AbstractCommand {
         //调用map的values方法，会返回map所有的Value的集合
         print("欢迎！",Commands.ENTRANCE_COMMANDS.values());
     }
+    public void customerHelp(){
+        //调用map的values方法，会返回map所有的Value的集合
+        print("欢迎！",Commands.CUSTOMER_COMMANDS.values());
+    }
+    public void adminHelp(){
+        //调用map的values方法，会返回map所有的Value的集合
+        print("欢迎！",Commands.ADMIN_COMMANDS.values());
+    }
     public void print(String title, Collection<Command> collection){
         //打印欢迎
         System.out.println("**************"+title+"**************");
@@ -58,6 +69,7 @@ public class HelpCommand extends AbstractCommand {
         Map<String,List<String>> helpInfo = new HashMap<>();
         //遍历它的命令
         for (Command command:collection){
+            //通过反射取得
             CommandMate commandMate =
                     command.getClass().getDeclaredAnnotation(CommandMate.class);
 
