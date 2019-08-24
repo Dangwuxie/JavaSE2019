@@ -48,7 +48,7 @@ public class LoginCommand extends AbstractCommand {
                 && account.getAccountStatus() == AccountStatus.UNLOCK){
             System.out.println(account.getAccountType()+"登陆成功");
             subject.setAccount(account);
-
+            
         }else {
             System.out.println("密码或者用户名错误！");
         }

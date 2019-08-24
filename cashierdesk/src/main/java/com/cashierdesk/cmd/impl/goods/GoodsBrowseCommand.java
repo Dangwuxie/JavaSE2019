@@ -5,6 +5,9 @@ import com.cashierdesk.cmd.annotation.AdminCommand;
 import com.cashierdesk.cmd.annotation.CommandMate;
 import com.cashierdesk.cmd.annotation.CustomerCommand;
 import com.cashierdesk.cmd.impl.AbstractCommand;
+import com.cashierdesk.entity.Goods;
+
+import java.util.List;
 
 /**
  * @author 灵魂编程者
@@ -26,6 +29,19 @@ public class GoodsBrowseCommand extends AbstractCommand {
     //商品浏览
     @Override
     public void execute(Subject subject) {
+        System.out.println("浏览商品：");
+        //查询所有商品
+        List<Goods> goodsList = this.goodsService.quarryAllgoods();
+
+        if (goodsList.isEmpty()){
+            System.out.println("商品为空");
+        }else{
+            //否则就遍历它
+            for (Goods goods:goodsList) {
+                System.out.println(goods);
+            }
+
+        }
 
     }
 }

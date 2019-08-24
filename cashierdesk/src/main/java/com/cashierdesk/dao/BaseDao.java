@@ -22,7 +22,7 @@ public class BaseDao {
     * 返回Connection对象
     * 关闭conn,stmt，rs等
     * */
-    private static volatile DataSource dataSource;//volatile保证去年全
+    private static volatile DataSource dataSource;//volatile保证
 
     private DataSource getDataSource(){
         if (dataSource == null){
@@ -31,7 +31,7 @@ public class BaseDao {
                     dataSource = new MysqlDataSource();
                     String host = "127.0.0.1";
                     String port = "3306";
-                    ((MysqlDataSource) dataSource).setURL("jdbc:mysql://"+(host+":"+port)+"/cashierdesk");
+                    ((MysqlDataSource) dataSource).setURL("jdbc:mysql://"+(host+":"+port)+"/cashierdesk?useSSL=false");
                     ((MysqlDataSource) dataSource).setUser("root");
                     ((MysqlDataSource) dataSource).setPassword("123456");
                 }

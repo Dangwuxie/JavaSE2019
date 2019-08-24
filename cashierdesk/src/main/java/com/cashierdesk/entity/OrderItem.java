@@ -22,4 +22,6 @@ public class OrderItem {
     private Integer goodsPrice;
     //折扣
     private Integer goodsDiscount;
+
+
 }

@@ -44,7 +44,7 @@ public class RegisterCommand extends AbstractCommand {
 
         System.out.println("请选择账户类型：1.管理员 2.普通用户");
         int accountType = scanner.nextInt();
-        AccountType accountType2 = AccountType.valueOf(1);
+        AccountType accountType2 = AccountType.valueOf(accountType);
 
         System.out.println("请设置账户状态：1.启用 2.停用");
         int  accountStatus = scanner.nextInt();

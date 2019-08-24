@@ -24,4 +24,6 @@ public class Order {
     private Integer total_money;
     //订单状态
     private OrderStatus order_status;
+
+
 }
