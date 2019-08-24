@@ -27,8 +27,7 @@ public class Accountdao extends BaseDao {
 
         try{
             connection = this.getConnection(true);
-            String sql = "select id,username,password,name,account_type," +
-                    "account_status from account where username=? and password=?";
+            String sql = "select id,username,password,name,account_type,account_status from account where username=? and password=?";
             //下来操作数据库
             preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1,username);
@@ -38,9 +37,7 @@ public class Accountdao extends BaseDao {
             //下面需要将这个结果集组装成一个Account
             if (resultSet.next()){
                 //解析result,拿到对应的Account
-                this.extractAccount(resultSet);
-
-
+               return this.extractAccount(resultSet);
             }
 
         } catch (SQLException e) {
@@ -75,23 +72,23 @@ public class Accountdao extends BaseDao {
             connection = this.getConnection(true);
             String sql = "insert into account(username,password,name," +
                     "account_type,account_status) values(?,?,?,?,?)";
+            //Statement.RETURN_GENERATED_KEYS可以获取插入这条语句的自增值
             preparedStatement = connection.prepareStatement(sql,Statement.RETURN_GENERATED_KEYS);
             preparedStatement.setString(1,account.getUsername());
-            preparedStatement.setString(2,account.getPassword());
+            preparedStatement.setString(2,DigestUtils.md5Hex(account.getPassword()));
             preparedStatement.setString(3,account.getName());
             preparedStatement.setInt(4,account.getAccountType().getFlg());
             preparedStatement.setInt(5,account.getAccountStatus().getFlg());
 
+            effect = (preparedStatement.executeUpdate() == 1);
             //getGeneratedKeys():获取自增的主键
             resultSet = preparedStatement.getGeneratedKeys();
 
             if (resultSet.next()){
-                effect = true;
                 //插入成功
                 Integer id = resultSet.getInt(1);
                 //这里有个问题，要是不设置的话那么这个账户就没有id了吗？
                 account.setId(id);
-
             }
 
         } catch (SQLException e) {

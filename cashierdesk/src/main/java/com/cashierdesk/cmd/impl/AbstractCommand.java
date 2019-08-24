@@ -3,6 +3,7 @@ package com.cashierdesk.cmd.impl;
 import com.cashierdesk.cmd.Command;
 import com.cashierdesk.cmd.Subject;
 import com.cashierdesk.service.AccountService;
+import com.cashierdesk.service.GoodsService;
 
 /**
  * @author 灵魂编程者
@@ -19,8 +20,11 @@ public class AbstractCommand implements Command {
     }
 
     public AccountService accountService;
+    public GoodsService goodsService;
     public AbstractCommand(){
         this.accountService = new AccountService();
+        this.goodsService = new GoodsService();
+
     }
 
 }
