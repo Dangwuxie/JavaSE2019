@@ -6,7 +6,10 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+<<<<<<< HEAD
 import java.util.ArrayList;
+=======
+>>>>>>> eeaddf556a5d8af909586f56926d14dff007e299
 import java.util.List;
 
 /**
@@ -22,6 +25,7 @@ public class GoodsDao extends BaseDao {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
         ResultSet resultSet = null;
+<<<<<<< HEAD
         List<Goods> goodsList = new ArrayList<>();
         try{
             connection = this.getConnection(true);
@@ -78,11 +82,19 @@ public class GoodsDao extends BaseDao {
             preparedStatement = connection.prepareStatement(sql);
 
             effect = (preparedStatement.executeUpdate() == 1);
+=======
+        try{
+            connection = this.getConnection(true);
+
+>>>>>>> eeaddf556a5d8af909586f56926d14dff007e299
 
 
         } catch (SQLException e) {
             e.printStackTrace();
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> eeaddf556a5d8af909586f56926d14dff007e299
     }
 }

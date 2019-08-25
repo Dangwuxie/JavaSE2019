@@ -16,6 +16,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file leaf-file-name="Accountdao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/dao/Accountdao.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -24,15 +25,27 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+=======
+      <file leaf-file-name="RegisterCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/impl/entrance/RegisterCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="46" column="66" selection-start-line="46" selection-start-column="66" selection-end-line="46" selection-end-column="66" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuitCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/impl/common/QuitCommand.java">
+      <file leaf-file-name="Accountdao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/dao/Accountdao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+            <state relative-caret-position="209">
+              <caret line="70" column="8" lean-forward="true" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -40,17 +53,74 @@
       <file leaf-file-name="GoodsBrowseCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/impl/goods/GoodsBrowseCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
+            <state relative-caret-position="348">
+              <caret line="33" column="61" lean-forward="true" selection-start-line="33" selection-start-column="61" selection-end-line="33" selection-end-column="61" />
+>>>>>>> eeaddf556a5d8af909586f56926d14dff007e299
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file leaf-file-name="QuitCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/impl/common/QuitCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="172">
+              <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+=======
+      <file leaf-file-name="AccountService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/service/AccountService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="20" column="27" lean-forward="true" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#421#422#0" expanded="true" />
+                <element signature="e#471#472#0" expanded="true" />
+                <element signature="e#568#569#0" expanded="true" />
+                <element signature="e#625#626#0" expanded="true" />
+                <element signature="e#672#673#0" expanded="true" />
+                <element signature="e#723#724#0" expanded="true" />
+              </folding>
+>>>>>>> eeaddf556a5d8af909586f56926d14dff007e299
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file leaf-file-name="GoodsBrowseCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/impl/goods/GoodsBrowseCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
+=======
+      <file leaf-file-name="GoodsService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/service/GoodsService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#365#366#0" expanded="true" />
+                <element signature="e#410#411#0" expanded="true" />
+              </folding>
+>>>>>>> eeaddf556a5d8af909586f56926d14dff007e299
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
       <file leaf-file-name="Commands.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/Commands.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-560">
               <caret line="46" column="22" lean-forward="true" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
+=======
+      <file leaf-file-name="GoodsDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/dao/GoodsDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="388">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+>>>>>>> eeaddf556a5d8af909586f56926d14dff007e299
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,11 +128,37 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="GoodsDao.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/dao/GoodsDao.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="368">
               <caret line="79" column="53" selection-start-line="79" selection-start-column="40" selection-end-line="79" selection-end-column="53" />
+=======
+      <file leaf-file-name="AbstractCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/impl/AbstractCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GoodsUpdateCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/impl/goods/GoodsUpdateCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseDao.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/dao/BaseDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="39" column="26" lean-forward="true" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
+>>>>>>> eeaddf556a5d8af909586f56926d14dff007e299
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -70,11 +166,22 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="PreparedStatement.java" pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/sql/PreparedStatement.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="418">
               <caret line="1316" column="38" selection-start-line="1316" selection-start-column="17" selection-end-line="1316" selection-end-column="38" />
+=======
+      <file leaf-file-name="AccountType.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/common/AccountType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="28" column="35" lean-forward="true" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+>>>>>>> eeaddf556a5d8af909586f56926d14dff007e299
             </state>
           </provider>
         </entry>
@@ -113,6 +220,10 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/cashierdesk/common/AccountStatus.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cashierdesk/common/OrderStatus.java" />
+<<<<<<< HEAD
+=======
+        <option value="$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/impl/entrance/LoginCommand.java" />
+>>>>>>> eeaddf556a5d8af909586f56926d14dff007e299
         <option value="$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/CheckCode.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/impl/common/HelpCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/impl/common/QuitCommand.java" />
@@ -125,6 +236,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/cashierdesk/dao/Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/impl/entrance/RegisterCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cashierdesk/dao/Accountdao.java" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/impl/goods/GoodsSoldOutCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/impl/goods/GoodsUpdateCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/Commands.java" />
@@ -135,6 +247,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/cashierdesk/entity/Goods.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/impl/AbstractCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/impl/goods/GoodsPutAwayCommand.java" />
+=======
+        <option value="$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/impl/goods/GoodsPutAwayCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/impl/goods/GoodsSoldOutCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/impl/goods/GoodsUpdateCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/impl/AbstractCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/impl/goods/GoodsBrowseCommand.java" />
+>>>>>>> eeaddf556a5d8af909586f56926d14dff007e299
         <option value="$PROJECT_DIR$/src/main/java/com/cashierdesk/service/GoodsService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cashierdesk/dao/GoodsDao.java" />
       </list>
@@ -268,7 +387,11 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="cashierdesk" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="dao" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+>>>>>>> eeaddf556a5d8af909586f56926d14dff007e299
             </path>
             <path>
               <item name="cashierdesk" type="b2602c69:ProjectViewProjectNode" />
@@ -278,7 +401,11 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="cashierdesk" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="entity" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+>>>>>>> eeaddf556a5d8af909586f56926d14dff007e299
             </path>
             <path>
               <item name="cashierdesk" type="b2602c69:ProjectViewProjectNode" />
@@ -288,7 +415,11 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="cashierdesk" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="service" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+>>>>>>> eeaddf556a5d8af909586f56926d14dff007e299
             </path>
             <path>
               <item name="cashierdesk" type="b2602c69:ProjectViewProjectNode" />
@@ -317,6 +448,7 @@
               <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
               <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
             </path>
             <path>
               <item name="cashierdesk" type="b2602c69:ProjectViewProjectNode" />
@@ -334,6 +466,17 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="sql" type="462c0819:PsiDirectoryNode" />
               <item name="PreparedStatement" type="1a9f42e2:ClassTreeNode" />
+=======
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="cashierdesk" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cashierdesk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cashierdesk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+>>>>>>> eeaddf556a5d8af909586f56926d14dff007e299
             </path>
           </expand>
           <select />
@@ -467,12 +610,19 @@
       <workItem from="1566553289220" duration="572000" />
       <workItem from="1566554333944" duration="17068000" />
       <workItem from="1566644001977" duration="9354000" />
+<<<<<<< HEAD
       <workItem from="1566690693434" duration="11625000" />
+=======
+>>>>>>> eeaddf556a5d8af909586f56926d14dff007e299
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="76338000" />
+=======
+    <option name="totallyTimeSpent" value="64713000" />
+>>>>>>> eeaddf556a5d8af909586f56926d14dff007e299
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
@@ -490,7 +640,11 @@
       <window_info anchor="bottom" id="Terminal" order="3" weight="0.32874355" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
+<<<<<<< HEAD
       <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.49759614" visible="true" weight="0.26596606" />
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.49759614" visible="true" weight="0.26273242" />
+>>>>>>> eeaddf556a5d8af909586f56926d14dff007e299
       <window_info anchor="bottom" id="Profiler" order="0" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
@@ -515,6 +669,19 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/Commands.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="820">
+          <caret line="41" column="52" lean-forward="true" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+>>>>>>> eeaddf556a5d8af909586f56926d14dff007e299
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/impl/entrance/RegisterCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -602,6 +769,7 @@
       </provider>
     </entry>
     <entry file="jar://D:/repository/org/projectlombok/lombok/1.18.6/lombok-1.18.6.jar!/lombok/Data.class">
+<<<<<<< HEAD
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
@@ -616,6 +784,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
+=======
+>>>>>>> eeaddf556a5d8af909586f56926d14dff007e299
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
@@ -692,6 +862,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/impl/account/AccountBrowseCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -700,6 +871,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/impl/account/AccountStatuseSetCommand.java">
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/annotation/CustomerCommand.java">
+>>>>>>> eeaddf556a5d8af909586f56926d14dff007e299
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
@@ -747,8 +921,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/common/AccountStatus.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/common/OrderStatus.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="308">
           <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
         </state>
@@ -758,11 +933,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+=======
+        <state relative-caret-position="400">
+          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/Command.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/impl/common/QuitCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+>>>>>>> eeaddf556a5d8af909586f56926d14dff007e299
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/annotation/CustomerCommand.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="260">
           <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
         </state>
@@ -779,31 +973,82 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="397">
           <caret line="50" column="12" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
+=======
+        <state relative-caret-position="180">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/impl/common/HelpCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="63" column="5" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/common/AccountStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/impl/common/AboutCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="31" column="60" selection-start-line="31" selection-start-column="60" selection-end-line="31" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/CheckCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+>>>>>>> eeaddf556a5d8af909586f56926d14dff007e299
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/entity/Account.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="248">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+>>>>>>> eeaddf556a5d8af909586f56926d14dff007e299
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/impl/common/QuitCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/impl/entrance/LoginCommand.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="172">
           <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+=======
+        <state relative-caret-position="197">
+          <caret line="44" column="30" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+>>>>>>> eeaddf556a5d8af909586f56926d14dff007e299
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/impl/goods/GoodsBrowseCommand.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="288">
           <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
         </state>
@@ -813,11 +1058,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+=======
+        <state relative-caret-position="248">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/dao/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+>>>>>>> eeaddf556a5d8af909586f56926d14dff007e299
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/entity/Order.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="368">
           <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
         </state>
@@ -834,12 +1097,78 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-560">
           <caret line="46" column="22" lean-forward="true" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
+=======
+        <state relative-caret-position="400">
+          <caret line="28" column="35" lean-forward="true" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/impl/entrance/RegisterCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="46" column="66" selection-start-line="46" selection-start-column="66" selection-end-line="46" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/impl/goods/GoodsPutAwayCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/impl/goods/GoodsSoldOutCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/impl/goods/GoodsUpdateCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/impl/AbstractCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/impl/goods/GoodsBrowseCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="33" column="61" lean-forward="true" selection-start-line="33" selection-start-column="61" selection-end-line="33" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/service/AccountService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="20" column="27" lean-forward="true" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+>>>>>>> eeaddf556a5d8af909586f56926d14dff007e299
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#421#422#0" expanded="true" />
+            <element signature="e#471#472#0" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
+            <element signature="e#625#626#0" expanded="true" />
+            <element signature="e#672#673#0" expanded="true" />
+            <element signature="e#723#724#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/Command.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -861,10 +1190,21 @@
           <folding>
             <element signature="e#519#520#0" expanded="true" />
             <element signature="e#555#556#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/service/GoodsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#365#366#0" expanded="true" />
+            <element signature="e#410#411#0" expanded="true" />
+>>>>>>> eeaddf556a5d8af909586f56926d14dff007e299
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/service/GoodsService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
@@ -873,10 +1213,19 @@
             <element signature="imports" expanded="true" />
             <element signature="e#361#362#0" expanded="true" />
             <element signature="e#407#408#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/dao/Accountdao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="70" column="8" lean-forward="true" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+>>>>>>> eeaddf556a5d8af909586f56926d14dff007e299
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/cmd/impl/goods/GoodsPutAwayCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -888,12 +1237,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="332">
           <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/dao/GoodsDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+>>>>>>> eeaddf556a5d8af909586f56926d14dff007e299
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/sql/PreparedStatement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
@@ -905,6 +1261,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="79" column="53" selection-start-line="79" selection-start-column="40" selection-end-line="79" selection-end-column="53" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cashierdesk/dao/BaseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="39" column="26" lean-forward="true" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
+>>>>>>> eeaddf556a5d8af909586f56926d14dff007e299
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

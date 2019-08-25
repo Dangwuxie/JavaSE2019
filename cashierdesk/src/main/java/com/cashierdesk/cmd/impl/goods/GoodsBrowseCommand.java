@@ -32,6 +32,7 @@ public class GoodsBrowseCommand extends AbstractCommand {
         System.out.println("浏览商品：");
         //查询所有商品
         List<Goods> goodsList = this.goodsService.quarryAllgoods();
+<<<<<<< HEAD
 
         if (goodsList.isEmpty()){
             System.out.println("商品为空");
@@ -43,5 +44,7 @@ public class GoodsBrowseCommand extends AbstractCommand {
 
         }
 
+=======
+>>>>>>> eeaddf556a5d8af909586f56926d14dff007e299
     }
 }
