@@ -21,7 +21,8 @@ public class Goods {
     private Integer price;
     //折扣，90，9折
     private Integer discount;
-
+    //加一个，需要购买的货物的数量
+    private Integer buyNum;
 
     @Override
     public String toString() {

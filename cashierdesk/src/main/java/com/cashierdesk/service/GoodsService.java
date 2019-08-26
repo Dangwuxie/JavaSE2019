@@ -20,6 +20,10 @@ public class GoodsService {
         this.goodsDao = new GoodsDao();
     }
 
+    public boolean updateGoodsAfterPay(Goods goods,int BuyNum){
+        return this.goodsDao.updateGoodsAfterPay(goods,BuyNum);
+    }
+
     public List<Goods> quarryAllgoods(){
         //这里边，调用goodsDao查询数据库，查询goods信息，就是list集合
         return this.goodsDao.quarryAllgoods();

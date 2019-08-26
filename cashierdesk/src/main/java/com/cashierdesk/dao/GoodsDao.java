@@ -19,6 +19,26 @@ import java.util.List;
  * @date 2019/8/24 23:08
  */
 public class GoodsDao extends BaseDao {
+    public boolean updateGoodsAfterPay(Goods goods,int BuyNum){
+        //此处实现具体的操作，更新商品数量
+        Connection connection = null;
+        PreparedStatement preparedStatement = null;
+        ResultSet resultSet = null;
+
+        try{
+            connection = this.getConnection(true);
+            String updateSql = "update goods set stock=? where id=?";
+            preparedStatement = connection.prepareStatement(updateSql);
+            preparedStatement.setInt(1,goods.getStock()-BuyNum);
+            preparedStatement.setInt(2,goods.getId());
+
+            return (preparedStatement.executeUpdate() == 1);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+
     public List<Goods> quarryAllgoods() {
         //这里边，直接连接数据库查询数据库，查询goods信息，就是list集合
         Connection connection = null;

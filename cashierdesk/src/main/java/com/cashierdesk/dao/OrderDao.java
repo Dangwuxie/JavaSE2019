@@ -19,6 +19,11 @@ public class OrderDao extends BaseDao{
     //OrderDao层就是直接与数据库连接操作的层
     List<Order> orderList = new ArrayList<>();
 
+    public boolean commitOrder(Order order){
+        //连接数据库，实现具体的订单插入操作
+        return true;
+    }
+
     public List<Order> queryOrderByAccount(Integer accountId){
         //进入此方法查询数据库order表，返回一个List集合
         Connection connection = null;
@@ -106,4 +111,7 @@ public class OrderDao extends BaseDao{
         return null;
 
     }
+
+
+
 }

@@ -28,7 +28,10 @@ public class Order {
     //订单状态
     private OrderStatus order_status;
 
+    //这个就是每个订单中存放的每一个商品信息；
     private List<OrderItem> orderItemList = new ArrayList<>();
+
+
 
 
 }

@@ -24,4 +24,7 @@ public class OrderService {
         return this.orderDao.queryOrderByAccount(accountId);
     }
 
+    public boolean commitOrder(Order order){
+        return this.orderDao.commitOrder(order);
+    }
 }

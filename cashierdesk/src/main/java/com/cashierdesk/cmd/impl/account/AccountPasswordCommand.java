@@ -23,6 +23,6 @@ import com.cashierdesk.cmd.impl.AbstractCommand;
 public class AccountPasswordCommand extends AbstractCommand {
     @Override
     public void execute(Subject subject) {
-        super.execute(subject);
+
     }
 }

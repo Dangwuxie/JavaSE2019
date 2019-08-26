@@ -31,6 +31,17 @@ public class OrderBrowseCommand extends AbstractCommand {
         List<Order> orderList =
                 this.orderService.queryOrderByAccount(subject.getAccount().getId());
 
+        if (orderList.isEmpty()){
+            System.out.println("目前没有订单！");
+            System.out.println("请重新选择：>>");
+        }else {
+            //此时就是可以查询到订单了，直接输出list中的要一个个order对象就行
+            for (Order order:orderList) {
+                System.out.println("-------------------- 开始分割线 ------------------------");
+                System.out.println(order);
+                System.out.println("-------------------- 结束分割线 ------------------------");
+            }
 
+        }
     }
 }

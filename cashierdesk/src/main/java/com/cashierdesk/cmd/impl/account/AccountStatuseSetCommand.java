@@ -22,6 +22,6 @@ import com.cashierdesk.cmd.impl.AbstractCommand;
 public class AccountStatuseSetCommand extends AbstractCommand {
     @Override
     public void execute(Subject subject) {
-        super.execute(subject);
+
     }
 }
