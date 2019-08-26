@@ -4,6 +4,9 @@ import com.cashierdesk.cmd.Subject;
 import com.cashierdesk.cmd.annotation.CommandMate;
 import com.cashierdesk.cmd.annotation.CustomerCommand;
 import com.cashierdesk.cmd.impl.AbstractCommand;
+import com.cashierdesk.entity.Order;
+
+import java.util.List;
 
 /**
  * @author 灵魂编程者
@@ -22,6 +25,12 @@ import com.cashierdesk.cmd.impl.AbstractCommand;
 public class OrderBrowseCommand extends AbstractCommand {
     @Override
     public void execute(Subject subject) {
+        System.out.println("以下是我的订单信息：");
+        //因为order订单有多个项，
+        //所以继续使用List来添加从数据库表中获取的order条目
+        List<Order> orderList =
+                this.orderService.queryOrderByAccount(subject.getAccount().getId());
+
 
     }
 }

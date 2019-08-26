@@ -3,6 +3,9 @@ package com.cashierdesk.entity;
 import com.cashierdesk.common.OrderStatus;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
+
 import lombok.Data;
 /**
  * @author 灵魂编程者
@@ -24,6 +27,8 @@ public class Order {
     private Integer total_money;
     //订单状态
     private OrderStatus order_status;
+
+    private List<OrderItem> orderItemList = new ArrayList<>();
 
 
 }

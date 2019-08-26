@@ -41,10 +41,10 @@ public class HelpCommand extends AbstractCommand {
             switch (account.getAccountType()){
                 //账户不同时展示的命令界面
                 case CUSTOMER:
-
+                    customerHelp();
                     break;
                 case ADMIN:
-
+                    adminHelp();
                     break;
                     default:
             }

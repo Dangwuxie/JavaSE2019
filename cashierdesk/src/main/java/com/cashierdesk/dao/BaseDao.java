@@ -1,6 +1,10 @@
 package com.cashierdesk.dao;
 
 /*import com.mysql.jdbc.Connection;*/
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.sql.Connection;
 import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
 
@@ -23,6 +27,7 @@ public class BaseDao {
     * 关闭conn,stmt，rs等
     * */
     private static volatile DataSource dataSource;//volatile保证
+
 
     private DataSource getDataSource(){
         if (dataSource == null){
@@ -72,5 +77,38 @@ public class BaseDao {
             }
         }
     }
+//这个看不懂
+    public String getSql(String sqlName) {
+        System.out.println("=====sqlName:"+sqlName);
+        //InputStream 是字节流
+        try (InputStream in = this.getClass()
+                .getClassLoader()
+                .getResourceAsStream("script/" + sqlName.substring(1) + ".sql");
+             //这个方法是用来获取配置文件的，方法传入的参数是一个路径
+             // 从1 开始提取的原因是：sqlName: @query_order_by_account 去掉@符号
+        ) {
+            if (in == null) {
+                throw new RuntimeException("load sql " + sqlName + " failed");
+            } else {
 
+                //InputStreamReader :字节流 通向字符流的桥梁
+                try (InputStreamReader isr = new InputStreamReader(in);
+                     //BufferedReader -> 从字符输入流中读取文本并缓冲字符
+                     BufferedReader reader = new BufferedReader(isr)) {
+
+                    StringBuilder stringBuilder = new StringBuilder();
+                    stringBuilder.append(reader.readLine());
+                    String line;
+                    while (( line = reader.readLine()) != null) {
+                        stringBuilder.append(" ").append(line);
+                    }
+
+                    //System.out.println("value:" + stringBuilder.toString());
+                    return stringBuilder.toString();
+                }
+            }
+        } catch (IOException e) {
+            throw new RuntimeException("load sql " + sqlName + " failed");
+        }
+    }
 }

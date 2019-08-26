@@ -34,9 +34,7 @@ public class CheckCode extends AbstractCommand {
                         Commands.getCustomerCommand(commandLine).execute(subject);
                         break;
                     default:
-
                 }
-
             }
         }
     }

@@ -22,6 +22,7 @@ public class Goods {
     //折扣，90，9折
     private Integer discount;
 
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -30,8 +31,9 @@ public class Goods {
                 .append("【商品名称】").append(this.getName()).append("\n")
                 .append("【商品介绍】").append(this.getIntroduce()).append("\n")
                 .append("【商品库存】").append(this.getStock()).append(this.getUnit()).append("\n")
-                .append("【商品价格】").append(String.format("%.2f",1.00D*this.getPrice() / 100)).append("\n")
-                .append("【商品折扣】").append(this.getPrice()).append("折").append("\n");
+                .append("【商品价格】").append(String.format("%.2f",1.00D*this.getPrice() / 100))
+                .append("元").append("\n")
+                .append("【商品折扣】").append(this.getDiscount()).append("折").append("\n");
         sb.append("==============================================================");
 
         return sb.toString();

@@ -25,13 +25,18 @@ public class GoodsService {
         return this.goodsDao.quarryAllgoods();
     }
 
-<<<<<<< HEAD
+
     public boolean putAwayService(Goods goods){
         //插入这个goods数据库中的goods表
         return this.goodsDao.putAwayService(goods);
 
     }
-=======
->>>>>>> eeaddf556a5d8af909586f56926d14dff007e299
 
+    public Goods getGoods(int goodsId){
+        return goodsDao.getGoodsById(goodsId);
+    }
+
+    public boolean modifyGoods(Goods goods){
+        return goodsDao.modifyGoods(goods);
+    }
 }

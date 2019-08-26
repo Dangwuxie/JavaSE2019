@@ -34,12 +34,14 @@ public class GoodsPutAwayCommand extends AbstractCommand {
         this.printlnInfo("商品库存");
         int stock = scanner.nextInt();
         this.printlnInfo("商品单位(个、包、箱、桶、瓶、千克)");
-        String unit = scanner.nextLine();
+        String unit = scanner.next();
         this.printlnInfo("商品价格(元),保留小数点后两位");
         int price = new Double(100 * scanner.nextDouble()).intValue();
         this.printlnInfo("商品折扣(90,九折；75，75折)");
         int discount = scanner.nextInt();
-
+        System.out.println("----------------------------------------");
+        System.out.println(discount);
+        System.out.println("----------------------------------------");
         //new一个Goods类，然后设置这一项goods的属性,
         //此时定义的goods不能加final属性，因为可能要修改
         Goods goods = new Goods();
