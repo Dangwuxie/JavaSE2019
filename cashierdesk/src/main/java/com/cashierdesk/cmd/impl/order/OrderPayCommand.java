@@ -35,7 +35,7 @@ public class OrderPayCommand extends AbstractCommand {
     @Override
     public void execute(Subject subject) {
         System.out.println("请输入你要购买的货物id以及数量(逗号使用英文字符)：");
-        System.out.println("id及数量用-隔开，多个货物之间逗号隔开，比如：3-4，2-2");
+        System.out.println("id及数量用-隔开，多个货物之间逗号隔开，比如：3-4，2-2:");
         //解析从输入端输入的字符串
         //如果不是指定格式就报错，重新选择
         String selectGoods = scanner.nextLine();
@@ -46,13 +46,19 @@ public class OrderPayCommand extends AbstractCommand {
 
         //写个for循环解析输入语句，添加商品goods对象
         for (String string:strings){
-            //每次取出来的字符串都是这种：2-3
-            String[] strings2 = string.split("-");
-            //然后从数据库取得该商品对象goods，设置goods的购买总数buyNum
-            Goods goods = this.goodsService.getGoods(Integer.parseInt(strings2[0]));
-            goods.setBuyNum(Integer.parseInt(strings2[1]));
-            //给商品订单添加商品信息
-            goodsList.add(goods);
+            try{
+                //每次取出来的字符串都是这种：2-3
+                String[] strings2 = string.split("-");
+                //然后从数据库取得该商品对象goods，设置goods的购买总数buyNum
+                Goods goods =
+                        this.goodsService.getGoods(Integer.parseInt(strings2[0]));
+                goods.setBuyNum(Integer.parseInt(strings2[1]));
+                //给商品订单添加商品信息
+                goodsList.add(goods);
+            }catch (Exception e){
+                System.out.println("1输入错误，请重新选择您所需要的操作！");
+                return;
+            }
         }
 
         //此时已经设置好要当前这么一个订单的多个商品的信息
@@ -95,7 +101,7 @@ public class OrderPayCommand extends AbstractCommand {
             //每次添加一个商品goods以及数量之后计算一下金额
             //实际金额就是当前的商品总金额乘以折扣
             int tempMoney = orderItem.getGoodsPrice()*orderItem.getGoodsNum();
-            totalMoney += tempMoney/100;
+            totalMoney += tempMoney;
             actualAmount+= tempMoney*orderItem.getGoodsDiscount()/100;
 
         }
@@ -107,6 +113,9 @@ public class OrderPayCommand extends AbstractCommand {
         *。。。这里貌似有问题
         *  原代码讲的是加入订单项中
         * */
+        //注意一下，此时订单已经创建完毕，首先同步到数据库
+        // 但是状态跟完成时间需要用户输入zf之后才能更新
+        this.orderService.commitOrder(order);
 
         System.out.println(order);//这里要输出订单需要order重写一下toString方法
         System.out.println("以上为订单信息，请选择支付或者其他：输入zf代表支付成功：");
@@ -118,9 +127,10 @@ public class OrderPayCommand extends AbstractCommand {
             order.setFinish_time(LocalDateTime.now());
             order.setOrder_status(OrderStatus.OK);
 
-            //下面就需要把这次创建的订单提交到数据库，
-            boolean commitOrder = this.orderService.commitOrder(order);
-            if (commitOrder){
+            //下面就需要把这次提交的订单状态以及完成时间更新
+            boolean effect = this.orderService.updateOrderStatus(order);
+            //如果订单提交成功，成功支付之后，才能修改商品的库存
+            if (effect){
                 //提交成功
                 /*
                 * 提交成功后就需要把目前数据库中
@@ -130,14 +140,17 @@ public class OrderPayCommand extends AbstractCommand {
                     //此时就是更新商品的数量了
                     boolean isUpdate =
                             this.goodsService.updateGoodsAfterPay(goods,goods.getBuyNum());
+
+                    if (isUpdate){
+                        System.out.println("所有商品库存信息已经更新！！");
+                    }else{
+                        System.out.println("库存更新失败");
+                    }
                 }
             }
-
         }else {
             //此时代表提交不成功，
-            System.out.println("你没有支付当前订单！");
-
-
+            System.out.println("你还没有支付当前订单！");
         }
 
     }

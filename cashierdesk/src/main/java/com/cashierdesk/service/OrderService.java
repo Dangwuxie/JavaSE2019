@@ -24,6 +24,9 @@ public class OrderService {
         return this.orderDao.queryOrderByAccount(accountId);
     }
 
+    public boolean updateOrderStatus(Order order){
+        return this.orderDao.updateOrderStatus(order);
+    }
     public boolean commitOrder(Order order){
         return this.orderDao.commitOrder(order);
     }
