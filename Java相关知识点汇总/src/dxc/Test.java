@@ -9,13 +9,19 @@ package dxc;
  */
 public class Test {
     public static void main(String[] args) {
-        char[] chs = "0123456789".toCharArray();
+        /*char[] chs = "0123456789".toCharArray();
         System.out.println(chs[0]+0);
         System.out.println(chs[0]+1);
         System.out.println(chs[0]+2);
         System.out.println(chs[0]+3);
         System.out.println(chs[0]+4);
-        System.out.println(chs[0]+9);
+        System.out.println(chs[0]+9);*/
 
+       /* char ch = 'A';
+        ch+=2;
+        System.out.println((char) ch);*/
+       String str = "hello";
+       str = str+" world";
+        System.out.println(str);
     }
 }

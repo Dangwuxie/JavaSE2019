@@ -9,6 +9,8 @@ package dxc.JVM.内存分配和回收策略;
  */
 
 /*
+    对象优先在Eden区域分配
+
     -XX:+PrintGCDetails
     -XX:+UseSerialGC
     -Xms20M
