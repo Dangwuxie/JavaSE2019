@@ -9,34 +9,32 @@ package dxc.JVM.内存模型与线程;
  */
 public class VolatileTest2 {
 
-    public static volatile boolean flag = true;
-    public static void main(String[] args) {
+    public static volatile boolean flag1 = false;
 
-        Thread t1 = new Thread(new Runnable() {
+    public static void main(String[] args) throws InterruptedException {
+
+        new Thread(new Runnable() {
             @Override
             public void run() {
-                for (;;){
-                    System.out.println(flag);
+                while(!flag1){
                 }
+                System.out.println("flag已经被修改了！");
             }
-        });
+        }).start();
 
-        Thread t2 = new Thread(new Runnable() {
+        Thread.sleep(2000);
+
+        new Thread(new Runnable() {
             @Override
             public void run() {
-                for (;;){
-                    flag = false;
-                }
+                fun();
             }
-        });
+        }).start();
 
-        t1.start();
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        t2.start();
-
+    }
+    public static void fun(){
+        System.out.println("开始修改");
+        flag1 = true;
+        System.out.println("修改完成");
     }
 }
