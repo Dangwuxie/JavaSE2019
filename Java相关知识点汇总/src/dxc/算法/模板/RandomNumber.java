@@ -10,10 +10,6 @@ package dxc.算法.模板;
 public class RandomNumber {
 
     public static void main(String[] args) {
-        /*System.out.println(Math.random());
-        int[] arr = randomArray(10,20);
-        PrintArray.printArray(arr);*/
-
         /*
         * 总是产生[0,19)之间的整数
         * */
@@ -26,15 +22,24 @@ public class RandomNumber {
     * value就是索要生成数组的元素的范围
     * 随机生成一个指定长度的数组
     * */
-    /*public static int[] randomArray(int size,int value){
-        int[] arr = new int[(int)(Math.random()*(size+1))];
+    public static int[] randomArray(int size,int value){
+        int[] arr = new int[size];
         System.out.println(arr.length);
         for (int i=0;i<arr.length;i++){
             arr[i] = (int) ((value+1)*Math.random());
-
         }
-
         return arr;
-    }*/
+    }
 
+    /*
+    * 直接返回一个固定长度内随机长度、固定范围随机长度的数组
+    * */
+    public static int[] randomArray2(int size,int value){
+        int[] arr = new int[(int) ((size+1)*Math.random())];
+        System.out.println(arr.length);
+        for (int i=0;i<arr.length;i++){
+            arr[i] = (int) ((value+1)*Math.random());
+        }
+        return arr;
+    }
 }
