@@ -8,7 +8,41 @@
     <artifactId>spring_1</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+
     <dependencies>
+        <!--spring框架引入-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>4.3.2.RELEASE</version>
+        </dependency>
+
+        <!--打印日志文件-->
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
+
+        <!-- 单元测试-->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
+
+        <!--测试模块-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>4.3.6.RELEASE</version>
+        </dependency>
+
+    </dependencies>
+
+
+
+    <!--<dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
@@ -21,5 +55,5 @@
             <version>1.2.17</version>
         </dependency>
 
-    </dependencies>
+    </dependencies>-->
 </project>
