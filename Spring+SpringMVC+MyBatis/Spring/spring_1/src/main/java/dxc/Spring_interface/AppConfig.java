@@ -1,4 +1,4 @@
-package dxc.Spring_interface.service;
+package dxc.Spring_interface;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -14,7 +14,6 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @ComponentScan
 public class AppConfig {
-
 
 
 }
