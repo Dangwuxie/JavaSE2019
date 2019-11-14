@@ -1,6 +1,6 @@
 package service;
 
-import dxc.Spring_interface.AppConfig;
+import dxc.Spring_interface.config.AppConfig;
 import dxc.Spring_interface.service.UserService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
