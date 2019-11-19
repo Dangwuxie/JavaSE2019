@@ -18,8 +18,8 @@ import org.springframework.context.annotation.Configuration;
 //以当前的包作为基础来扫描当前包里面的所有组件；
 //@ComponentScan("dxc.Spring_interface")
 /*@ComponentScan(basePackages =
-        {"dxc.Spring_interface.dao",
-                "dxc.Spring_interface.service",
+        {"dxc.Spring_interface.javaConfigTest.dao",
+                "dxc.Spring_interface.UserService",
                 "dxc.Spring_interface.web"})*/
 /*@ComponentScan(basePackageClasses =
         {*//*类名*//*UserController.class,

@@ -31,8 +31,11 @@ public class AppTest {
     @Test
     public void testPlay(){
 
-        /*ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+        /*ApplicationContext context =
+        new AnnotationConfigApplicationContext(AppConfig.class);
+
         CDPlayer player = context.getBean(CDPlayer.class);*/
+
         player.play();
 
     }

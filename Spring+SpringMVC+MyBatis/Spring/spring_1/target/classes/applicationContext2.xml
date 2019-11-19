@@ -6,9 +6,9 @@
 
     <!--组件扫描的配置-->
         <context:component-scan base-package="dxc.Spring_interface"/>
-       <!-- <context:component-scan base-package="dxc.Spring_interface.dao"/>
+       <!-- <context:component-scan base-package="dxc.Spring_interface.javaConfigTest.dao"/>
     <context:component-scan base-package="dxc.Spring_interface.config"/>
-    <context:component-scan base-package="dxc.Spring_interface.service"/>
+    <context:component-scan base-package="dxc.Spring_interface.UserService"/>
     <context:component-scan base-package="dxc.Spring_interface.web"/>
 -->
 </beans>

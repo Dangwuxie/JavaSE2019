@@ -26,13 +26,13 @@ public class ApplicationSpring {
         //从容器中获取两个MessagePrinter\MessageService对象
         MessagePrinter printer = context.getBean(MessagePrinter.class);
         //service这个对象也没有不必要获取了
-        //MessageService service = context.getBean(MessageService.class);
+        //MessageService UserService = context.getBean(MessageService.class);
         System.out.println(printer);
-        //System.out.println(service);
+        //System.out.println(UserService);
 
         //设置打印机对象的service属性
         //此关联关系的创建也是可以由spring来完成的
-        //printer.setService(service);
+        //printer.setService(UserService);
         //打印消息
         printer.printMesage();
 
