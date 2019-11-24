@@ -24,14 +24,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/dxc/soundSystem/CompactDisc.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/dxc/soundSystem/AppTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/dxc/soundSystem/ApplicationSpring.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dxc/soundSystem/CDPlayer.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/test/java/dxc/soundSystem/CDPlayerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/dxc/soundSystem/CompactDiscTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/dxc/soundSystem/CompactDisc.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dxc/soundSystem/Music.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dxc/soundSystem/CDPlayer.java" />
+        <option value="$PROJECT_DIR$/src/test/java/dxc/soundSystem/AppTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/applicationContext-property.xml" />
       </list>
     </option>
   </component>
@@ -80,6 +83,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -87,39 +93,10 @@
               <item name="spring2_xml" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring2_xml" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="spring2_xml" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring2_xml" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring2_xml" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring2_xml" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring2_xml" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring2_xml" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring2_xml" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring2_xml" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dxc" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -130,7 +107,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.24362895" />
-    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -149,22 +126,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CDPlayerTest.Test02">
-    <configuration name="ApplicationSpring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dxc.soundSystem.ApplicationSpring" />
-      <module name="spring2_xml" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dxc.soundSystem.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
+  <component name="RunManager" selected="JUnit.AppTest.test">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="AppTest.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AppTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring2_xml" />
       <extension name="coverage">
         <pattern>
@@ -176,7 +142,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="dxc.soundSystem" />
       <option name="MAIN_CLASS_NAME" value="dxc.soundSystem.AppTest" />
-      <option name="METHOD_NAME" value="test01" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -256,6 +222,29 @@
       </option>
       <patterns />
     </configuration>
+    <configuration name="CompactDiscTest.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring2_xml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dxc.soundSystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="dxc.soundSystem" />
+      <option name="MAIN_CLASS_NAME" value="dxc.soundSystem.CompactDiscTest" />
+      <option name="METHOD_NAME" value="test01" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -295,19 +284,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.ApplicationSpring" />
-      <item itemvalue="JUnit.AppTest.test01" />
+      <item itemvalue="JUnit.CompactDiscTest.test01" />
       <item itemvalue="JUnit.CDPlayerTest.Test02" />
       <item itemvalue="JUnit.CDPlayerTest.Test03" />
       <item itemvalue="JUnit.CDPlayerTest.Test04" />
+      <item itemvalue="JUnit.AppTest.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AppTest.test" />
+        <item itemvalue="JUnit.CompactDiscTest.test01" />
         <item itemvalue="JUnit.CDPlayerTest.Test02" />
         <item itemvalue="JUnit.CDPlayerTest.Test04" />
         <item itemvalue="JUnit.CDPlayerTest.Test03" />
-        <item itemvalue="Application.ApplicationSpring" />
-        <item itemvalue="JUnit.AppTest.test01" />
       </list>
     </recent_temporary>
   </component>
@@ -323,43 +312,45 @@
       <updated>1574436363703</updated>
       <workItem from="1574436366254" duration="2223000" />
       <workItem from="1574468968196" duration="8724000" />
+      <workItem from="1574513244438" duration="2526000" />
+      <workItem from="1574560727713" duration="6617000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AppTest_test01 - 2019.11.23 at 10h 29m 12s.xml">
-      <configuration name="AppTest.test01" configurationId="JUnit" />
+    <history-entry file="AppTest_test - 2019.11.24 at 16h 04m 04s.xml">
+      <configuration name="AppTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest_test01 - 2019.11.23 at 10h 32m 56s.xml">
-      <configuration name="AppTest.test01" configurationId="JUnit" />
+    <history-entry file="AppTest_test - 2019.11.24 at 16h 04m 28s.xml">
+      <configuration name="AppTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CDPlayerTest_Test02 - 2019.11.23 at 14h 48m 28s.xml">
-      <configuration name="CDPlayerTest.Test02" configurationId="JUnit" />
+    <history-entry file="AppTest_test - 2019.11.24 at 16h 08m 59s.xml">
+      <configuration name="AppTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CDPlayerTest_Test02 - 2019.11.23 at 14h 49m 42s.xml">
-      <configuration name="CDPlayerTest.Test02" configurationId="JUnit" />
+    <history-entry file="AppTest_test - 2019.11.24 at 16h 10m 00s.xml">
+      <configuration name="AppTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CDPlayerTest_Test02 - 2019.11.23 at 14h 50m 30s.xml">
-      <configuration name="CDPlayerTest.Test02" configurationId="JUnit" />
+    <history-entry file="AppTest_test - 2019.11.24 at 16h 39m 23s.xml">
+      <configuration name="AppTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CDPlayerTest_Test03 - 2019.11.23 at 15h 16m 16s.xml">
-      <configuration name="CDPlayerTest.Test03" configurationId="JUnit" />
+    <history-entry file="AppTest_test - 2019.11.24 at 16h 40m 27s.xml">
+      <configuration name="AppTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CDPlayerTest_Test03 - 2019.11.23 at 15h 23m 04s.xml">
-      <configuration name="CDPlayerTest.Test03" configurationId="JUnit" />
+    <history-entry file="AppTest_test - 2019.11.24 at 16h 40m 53s.xml">
+      <configuration name="AppTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CDPlayerTest_Test03 - 2019.11.23 at 15h 23m 50s.xml">
-      <configuration name="CDPlayerTest.Test03" configurationId="JUnit" />
+    <history-entry file="AppTest_test - 2019.11.24 at 16h 41m 15s.xml">
+      <configuration name="AppTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CDPlayerTest_Test04 - 2019.11.23 at 15h 24m 29s.xml">
-      <configuration name="CDPlayerTest.Test04" configurationId="JUnit" />
+    <history-entry file="AppTest_test - 2019.11.24 at 16h 42m 24s.xml">
+      <configuration name="AppTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CDPlayerTest_Test02 - 2019.11.23 at 15h 25m 48s.xml">
-      <configuration name="CDPlayerTest.Test02" configurationId="JUnit" />
+    <history-entry file="AppTest_test - 2019.11.24 at 16h 46m 24s.xml">
+      <configuration name="AppTest.test" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10947000" />
+    <option name="totallyTimeSpent" value="20090000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
@@ -371,15 +362,15 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" weight="0.2586904" />
+      <window_info anchor="right" id="Maven Projects" order="3" weight="0.20210186" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.36316696" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.42685026" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32874355" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49751243" visible="true" weight="0.20452708" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49751243" visible="true" weight="0.2287793" />
       <window_info anchor="bottom" id="Profiler" order="7" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" sideWeight="0.50124687" side_tool="true" weight="0.25383994" />
@@ -393,7 +384,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32874355" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -401,6 +392,11 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -421,30 +417,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/dxc/soundSystem/AppTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="35" column="10" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dxc/soundSystem/ApplicationSpring.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dxc/soundSystem/CompactDisc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/dxc/soundSystem/CDPlayerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -461,21 +433,92 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dxc/soundSystem/ApplicationSpring.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext-constructor.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="41" column="52" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/dxc/soundSystem/CompactDiscTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dxc/soundSystem/CDPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+        <state relative-caret-position="229">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
+            <element signature="e#268#269#0" expanded="true" />
+            <element signature="e#302#303#0" expanded="true" />
             <element signature="e#250#251#0" expanded="true" />
             <element signature="e#305#306#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/dxc/soundSystem/AppTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="72" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="72" />
+        <state relative-caret-position="375">
+          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#629#630#0" expanded="true" />
+            <element signature="e#660#661#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext-property.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-83">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dxc/soundSystem/CompactDisc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="41" column="61" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#396#397#0" expanded="true" />
+            <element signature="e#424#425#0" expanded="true" />
+            <element signature="e#457#458#0" expanded="true" />
+            <element signature="e#486#487#0" expanded="true" />
+            <element signature="e#520#521#0" expanded="true" />
+            <element signature="e#549#550#0" expanded="true" />
+            <element signature="e#1322#1323#0" expanded="true" />
+            <element signature="e#1399#1400#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dxc/soundSystem/Music.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="15" column="61" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
+          <folding>
+            <element signature="e#255#256#0" expanded="true" />
+            <element signature="e#309#310#0" expanded="true" />
+            <element signature="e#542#543#0" expanded="true" />
+            <element signature="e#569#570#0" expanded="true" />
+            <element signature="e#601#602#0" expanded="true" />
+            <element signature="e#628#629#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

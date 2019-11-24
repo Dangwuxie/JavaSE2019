@@ -8,37 +8,31 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 /**
  * @author 灵魂编程者
- * @Title: CDPlayerTest
+ * @Title: CompactDiscTest
  * @Description: 天下风云出我辈，一入代码岁月催，
  * --------------皇图霸业谈笑中，不胜编程一场醉。
- * @date 2019/11/23 14:46
+ * @date 2019/11/23 10:22
  */
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("classpath:applicationContext-constructor.xml")
-public class CDPlayerTest {
+public class CompactDiscTest {
 
     @Autowired
-    private CDPlayer cdPlayer1;
+    private CompactDisc compactDisc1;
 
-    @Autowired
-    private CDPlayer cdPlayer2;
-
-    @Autowired
-    private CDPlayer cdPlayer3;
-
-    @Test
-    public void Test02(){
-        cdPlayer1.play();
-    }
+    /*@Autowired
+    private CompactDisc compactDisc2;
+*/
+    /*@Autowired
+    @Qualifier("compactDisc2")
+    private CompactDisc compactDisc3;*/
 
     @Test
-    public void Test03(){
-        cdPlayer2.play();
+    public void test01(){
+        compactDisc1.play();
+        //compactDisc2.play();
+        //compactDisc3.play();
     }
 
-    @Test
-    public void Test04(){
-        cdPlayer3.play();
-    }
 }

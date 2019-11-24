@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/util
+       http://www.springframework.org/schema/util/spring-util.xsd">
+
+        <bean id="music1" class="dxc.soundSystem.Music" p:name="张三" p:time="180"/>
+
+        <bean id="music2" class="dxc.soundSystem.Music">
+            <property name="name" value="李四"/>
+            <property name="time" value="190"/>
+        </bean>
+
+
+        <util:list id="tracksList1">
+            <ref bean="music1"/>
+            <ref bean="music2"/>
+        </util:list>
+
+        <bean id="compactDisc1" class="dxc.soundSystem.CompactDisc"
+              p:title="菊花残" p:artist="周杰伦"
+              p:tracks-ref="tracksList1">
+            <!--<property name="artist" value="周杰伦"/>
+            <property name="title" value="菊花残"/>
+            <property name="tracks">
+                <array>
+                    <ref bean="music1"/>
+                    <ref bean="music2"/>
+                </array>
+            </property>-->
+        </bean>
+
+        <bean id="cdPlayer1" class="dxc.soundSystem.CDPlayer">
+            <property name="compactDisc" ref="compactDisc1"/>
+        </bean>
+
+</beans>

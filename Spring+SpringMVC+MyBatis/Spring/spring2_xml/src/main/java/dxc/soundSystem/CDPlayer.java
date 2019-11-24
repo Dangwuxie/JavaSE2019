@@ -11,6 +11,15 @@ public class CDPlayer {
 
     private CompactDisc compactDisc;
 
+    public CompactDisc getCompactDisc() {
+        return compactDisc;
+    }
+
+    public void setCompactDisc(CompactDisc compactDisc) {
+        this.compactDisc = compactDisc;
+        System.out.println("在 "+this.toString()+"中注入compactDisc");
+    }
+
     public CDPlayer() {
         System.out.println("CDPlayer的无参构造....");
     }

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+        <!--<bean id="compactDisc1 compactDisc12" class="dxc.soundSystem.CompactDisc" />-->
+        <bean id="music1" class="dxc.soundSystem.Music">
+                <constructor-arg value="音乐1"/>
+                <constructor-arg value="120"/>
+        </bean>
+        <bean id="music2" class="dxc.soundSystem.Music">
+                <constructor-arg value="音乐2"/>
+                <constructor-arg value="140"/>
+        </bean>
+        <bean id="music3" class="dxc.soundSystem.Music">
+                <constructor-arg value="音乐3"/>
+                <constructor-arg value="160"/>
+        </bean>
+        <bean id="compactDisc1" class="dxc.soundSystem.CompactDisc">
+                <constructor-arg name="title" value="I DO"/>
+                <constructor-arg name="artist" value="周杰伦"/>
+
+                <constructor-arg name="tracks">
+                        <!--<map>
+                                <entry key="m1" value-ref="music1"/>
+                                <entry key="m2" value-ref="music2"/>
+                                <entry key="m3" value-ref="music3"/>
+                        </map>-->
+
+                        <!--<value>音乐1</value>
+                                <value>音乐2</value>
+                                <value>音乐3</value>-->
+                        <!--<ref bean="music1"/>
+                        <ref bean="music2"/>
+                        <ref bean="music3"/>-->
+
+                        <array>
+                                <!--<value>你好</value>-->
+                                <ref bean="music1"/>
+                                <ref bean="music2"/>
+                                <ref bean="music3"/>
+                        </array>
+                </constructor-arg>
+        </bean>
+
+        <!--<bean id="compactDisc2" class="dxc.soundSystem.CompactDisc" c:title="菊花残" c:artist="周杰伦" />
+
+        <bean id="cdPlayer1" class="dxc.soundSystem.CDPlayer">
+                <constructor-arg ref="compactDisc1"/>
+        </bean>
+
+        <bean id="cdPlayer2" class="dxc.soundSystem.CDPlayer" c:compactDisc-ref="compactDisc2"></bean>
+
+        <bean id="cdPlayer3" class="dxc.soundSystem.CDPlayer" c:_0-ref="compactDisc2"></bean>-->
+
+
+</beans>
