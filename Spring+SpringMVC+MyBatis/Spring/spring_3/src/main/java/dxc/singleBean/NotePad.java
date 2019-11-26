@@ -11,7 +11,15 @@ public class NotePad {
 
     public NotePad() {
         super();
-        System.out.println("NotePad的无参构造......");
+        System.out.println("NotePad的无参构造......"+this.toString());
+    }
+
+    public void init(){
+        System.out.println("init方法....");
+    }
+
+    public void destroy(){
+        System.out.println("destroy方法");
     }
 
 }

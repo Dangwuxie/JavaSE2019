@@ -19,8 +19,10 @@ public class SingleBeanTest {
         ClassPathXmlApplicationContext context =
                 new ClassPathXmlApplicationContext("applicationContext.xml");
         NotePad notePad1 = (NotePad) context.getBean("notePad");
-        NotePad notePad2 = (NotePad) context.getBean("notePad");
 
-        System.out.println(notePad1 == notePad2);;
+        notePad1.destroy();
+        /*NotePad notePad2 = (NotePad) context.getBean("notePad");
+
+        System.out.println(notePad1 == notePad2);*/
     }
 }
